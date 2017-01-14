@@ -1,0 +1,131 @@
+{
+  "name": "John Doe",
+  "first_name": "John",
+  "last_name": "Doe",
+  "title": "John Doe title",
+  "picture": "https://www.gravatar.com/avatar/profile.png",
+  "location": "Berlin, Germany",
+  "websites": [
+    {
+      "name": "Personal Website",
+      "link": "https://wnm.io"
+    }
+  ],
+  "experience": [
+    {
+      "title": "Self-employed",
+      "company": "Prtfl.io",
+      "tags": [
+        {
+          "name": "ruby-on-rails"
+        }
+      ],
+      "start_date": "Apr 2015",
+      "end_date": "Present"
+    },
+    {
+      "title": "Software Developer",
+      "company": "BlaBla GmbH",
+      "description": "Lead Developer on client project",
+      "start_date": "Sep 2014",
+      "end_date": "Mar 2015",
+      "tags": [
+        {
+          "name": "ruby",
+          "name": "ruby-on-rails",
+          "name": "elasticsearch",
+          "name": "ember.js"
+        }
+      ]
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Certification 1",
+      "start_date": "Feb 2012",
+      "end_date": "Feb 2015",
+      "tags": [
+        {
+          "name": "Tag 1"
+        }
+      ]
+    },
+    {
+      "name": "Certification 2",
+      "start_date": "Feb 2014",
+      "end_date": "Feb 2016",
+      "tags": [
+        {
+          "name": "Tag 1"
+        }
+      ]
+    }
+  ],
+  "education": [
+    {
+      "school": "Hochschule der Medien Stuttgart",
+      "start_date": "2009",
+      "end_date": "2012",
+      "degree": "Bachelor of Arts, Computer Science"
+    }
+  ],
+  "technologies": [
+    {
+      "name": "ruby"
+    },
+    {
+      "name": "ruby-on-rails"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Project 1",
+      "end_date": "Present",
+      "url": "https://project.com/",
+      "description": "description",
+      "tags": [
+        {
+          "name": "ruby-on-rails"
+        }
+      ]
+    },
+    {
+      "name": "Project 2",
+      "start_date": "March 2016",
+      "end_date": "Present",
+      "url": "https://project2.com/",
+      "description": "description",
+      "tags": [
+        {
+          "name": "tag"
+        }
+      ]
+    }
+  ],
+  "open_source_projects": [
+    {
+      "name": "Open Source Project 1",
+      "start_date": "Mar 2009",
+      "end_date": "Aug 2011",
+      "url": "https://github.com/1",
+      "description": "description",
+      "tags": [
+        {
+          "name": "tag"
+        }
+      ]
+    },
+    {
+      "name": "Open Source Project 2",
+      "start_date": "Mar 2009",
+      "end_date": "Aug 2011",
+      "url": "https://github.com/2",
+      "description": "description",
+      "tags": [
+        {
+          "name": "tag"
+        }
+      ]
+    }
+  ]
+}

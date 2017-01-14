@@ -1,0 +1,57 @@
+{
+  "name": "John Doe",
+  "first_name": "John",
+  "last_name": "Doe",
+  "title": "Ltg. Produktmanagement & Marketing",
+  "picture": "https://www.xing.com/image/6_8_a_502eb86a5_3165185_5/John-Doe-foto.256x256.jpg",
+  "experience": [
+    {
+      "title": "Ltg. Produktmanagement & Marketing",
+      "company": "Unternehmensname 1",
+      "start_date": "07/2016",
+      "end_date": "heute"
+    },
+    {
+      "title": "Inhaber",
+      "company": "Unternehmensname 2",
+      "start_date": "2003",
+      "end_date": "heute"
+    }
+  ],
+  "education": [
+    {
+      "school": "HFH -Hamburg",
+      "start_date": "08/2016",
+      "end_date": "09/2018",
+      "description": "BWL, MBA"
+    },
+    {
+      "school": "FH Südwestfalen",
+      "start_date": "10/2009",
+      "end_date": "06/2012",
+      "description": "BWL, Bachelor of Arts"
+    }
+  ],
+  "interests": [
+    {
+      "name": "privat: Fliegen (PPL-N)"
+    },
+    {
+      "name": "Kommunikation allgemein"
+    }
+  ],
+  "languages": [
+    {
+      "name": "Deutsch",
+      "proficiency": "Muttersprache"
+    },
+    {
+      "name": "Englisch",
+      "proficiency": "Fließend"
+    },
+    {
+      "name": "Französisch",
+      "proficiency": "Grundkenntnisse"
+    }
+  ]
+}
