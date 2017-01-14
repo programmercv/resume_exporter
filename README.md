@@ -11,7 +11,7 @@ RésuméExporter
 
 RésuméExporter is a tool to export résumé data from different sources (LinkedIn, Xing, Stackoverflow) to json or xml.
 
-You can use it as a [command-line tool](https://github.com/prtflio/resume_exporter#from-the-command-line), as a [ruby library](https://github.com/prtflio/resume_exporter#in-your-ruby-project) or online at [https://prtfl.io/resume-exporter](https://prtfl.io/resume-exporter).
+You can use it as a [command-line tool](#from-the-command-line), as a [ruby library](#in-your-ruby-project) or online at [https://prtfl.io/resume-exporter](https://prtfl.io/resume-exporter).
 
 Eventually, this tool is supposed to be one of the pieces of [https://prtfl.io/](https://prtfl.io/) (which is currently still work in progress, though)
 
@@ -33,6 +33,25 @@ Add it to your Gemfile:
 `gem 'resume_exporter'`
 
 Then run `bundle install`
+
+## Prerequisite
+
+### Save your public profile as html
+
+#### LinkedIn:
+
+Preview your profile [https://www.linkedin.com/profile/preview](here), or navigate to it via "Profile" -> "Edit Profile" -> "View profile as"
+Save the page as "Web Page, HTML only". 
+
+#### Xing:
+
+Go to your public profile [https://www.xing.com/profile/Max_Mustermannn14](e.g. https://www.xing.com/profile/Max_Mustermannn14)
+Save the page as "Web Page, HTML only". 
+
+#### Stackoverflow:
+
+Go to your public profile (the old CV version, not the new developer story) [https://stackoverflow.com/cv/wnm](e.g. https://stackoverflow.com/cv/wnm)
+Save the page as "Web Page, HTML only". 
 
 ## Usage
 
