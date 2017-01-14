@@ -2,7 +2,7 @@ Gem::Specification.new do |gem|
   gem.name        = 'resume_exporter'
   gem.version     = '0.0.1'
   gem.date        = '2016-12-06'
-  gem.summary     = "A gem to export résumé data from different sources (LinkedIn, Xing, Stackoverflow)"
+  gem.summary     = "A tool to export résumé data from different sources (LinkedIn, Xing, Stackoverflow)"
   gem.description = "It extracts résumé data from public profile html files and exports to json, xml"
   gem.authors     = ["Wolfram Müller"]
   gem.email       = 'hi@wnm.io'
