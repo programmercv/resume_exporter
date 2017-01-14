@@ -9,8 +9,13 @@ RésuméExporter
 [![Gem](https://img.shields.io/gem/v/resume_exporter.svg?style=flat)](https://rubygems.org/gems/resume_exporter)
 [![Travis](https://img.shields.io/travis/prtflio/resume_exporter.svg)](https://travis-ci.org/prtflio/resume_exporter)
 
-
 RésuméExporter is a tool to export résumé data from different sources (LinkedIn, Xing, Stackoverflow) to json or xml.
+
+You can use it as a [command-line tool](https://github.com/prtflio/resume_exporter#from-the-command-line), as a [ruby library](https://github.com/prtflio/resume_exporter#in-your-ruby-project) or online at [https://prtfl.io/resume-exporter](https://prtfl.io/resume-exporter).
+
+Eventually, this tool is supposed to be one of the pieces of [https://prtfl.io/](https://prtfl.io/) (which is currently still work in prograss, though)
+
+This is my first gem, contributions and feedback are welcome! Please be gentle.
 
 ## Installation
 
@@ -33,7 +38,8 @@ Then run `bundle install`
 
 ### From the command line
 
-Save your profile (e.g. from LinkedIn, Xing, or Stackoverflow) as html and export to json or xml with the help of ResumeExporter.
+Save your profile (e.g. from LinkedIn, Xing, or Stackoverflow) as html.
+Then use the `resume_exporter` command to extract data.
 
 Example 1: extract resume data from .html file, and export as json:
 
@@ -63,7 +69,7 @@ r = ResumeExporter.new("path/to/your/profile.html")
 r.to_json # returns all attributes as json
 r.to_xml # returns all attributes as xml
 
-# you can access individual attributes like:
+# you can access individual attributes:
 
 r.first_name
 r.last_name
