@@ -40,17 +40,17 @@ Then run `bundle install`
 
 #### LinkedIn:
 
-Preview your profile [https://www.linkedin.com/profile/preview](here), or navigate to it via "Profile" -> "Edit Profile" -> "View profile as"
+Preview your profile [https://www.linkedin.com/profile/preview](here), or navigate to it via "Profile" -> "Edit Profile" -> "View profile as"  
 Save the page as "Web Page, HTML only". 
 
 #### Xing:
 
-Go to your public profile [https://www.xing.com/profile/Max_Mustermannn14](e.g. https://www.xing.com/profile/Max_Mustermannn14)
+Go to your public profile [https://www.xing.com/profile/Max_Mustermannn14](e.g. https://www.xing.com/profile/Max_Mustermannn14)  
 Save the page as "Web Page, HTML only". 
 
 #### Stackoverflow:
 
-Go to your public profile (the old CV version, not the new developer story) [https://stackoverflow.com/cv/wnm](e.g. https://stackoverflow.com/cv/wnm)
+Go to your public profile (the old CV version, not the new developer story) [https://stackoverflow.com/cv/wnm](e.g. https://stackoverflow.com/cv/wnm)  
 Save the page as "Web Page, HTML only". 
 
 ## Usage
