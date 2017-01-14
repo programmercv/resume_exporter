@@ -13,7 +13,7 @@ RésuméExporter is a tool to export résumé data from different sources (Linke
 
 You can use it as a [command-line tool](https://github.com/prtflio/resume_exporter#from-the-command-line), as a [ruby library](https://github.com/prtflio/resume_exporter#in-your-ruby-project) or online at [https://prtfl.io/resume-exporter](https://prtfl.io/resume-exporter).
 
-Eventually, this tool is supposed to be one of the pieces of [https://prtfl.io/](https://prtfl.io/) (which is currently still work in prograss, though)
+Eventually, this tool is supposed to be one of the pieces of [https://prtfl.io/](https://prtfl.io/) (which is currently still work in progress, though)
 
 This is my first gem, contributions and feedback are welcome! Please be gentle.
 
