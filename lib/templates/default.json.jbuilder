@@ -176,14 +176,14 @@ end
 json.patents do
   json.summary @data.dig(:patents, :summary)
   json.history @data.dig(:patents, :history) do |patent|
-    json.title entry[:title]
-    json.url entry[:url]
-    json.number entry[:number]
-    json.status entry[:status]
-    json.description entry[:description]
-    json.date entry[:date]
-    json.highlights entry[:highlights]
-    json.keywords entry[:keywords]
+    json.title patent[:title]
+    json.url patent[:url]
+    json.number patent[:number]
+    json.status patent[:status]
+    json.description patent[:description]
+    json.date patent[:date]
+    json.highlights patent[:highlights]
+    json.keywords patent[:keywords]
   end
 end
 
