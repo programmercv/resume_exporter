@@ -5,7 +5,7 @@ module Exporter
   module Md
     def self.export(options = {})
       @data = options[:data]
-      Tilt.new(File.expand_path("lib/templates/default.md.erb")).render(self)
+      Tilt.new(File.expand_path("../templates/default.md.erb", __dir__)).render(self)
     end
   end
 end

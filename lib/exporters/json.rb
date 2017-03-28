@@ -10,7 +10,7 @@ module Exporter
     def self.export(options = {})
       template = options[:template] || "default"
       @data = options[:data]
-      Tilt::JbuilderTemplate.new(File.expand_path("lib/templates/#{template}.json.jbuilder")).render(self)
+      Tilt::JbuilderTemplate.new(File.expand_path("../templates/#{template}.json.jbuilder", __dir__)).render(self)
     end
   end
 end
