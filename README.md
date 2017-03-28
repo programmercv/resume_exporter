@@ -2,6 +2,9 @@
   <img src="resume_exporter.png" alt="ResumeExporter Logo" />
 </h3>
 
+## TL;TR
+RésuméExporter is a tool to export résumé data from different sources (LinkedIn, Xing, Stackoverflow) to json, xml, md, yaml, doc, pdf, html.
+
 RésuméExporter
 ============
 
@@ -9,19 +12,15 @@ RésuméExporter
 [![Gem](https://img.shields.io/gem/v/resume_exporter.svg?style=flat)](https://rubygems.org/gems/resume_exporter)
 [![Travis](https://img.shields.io/travis/prtflio/resume_exporter.svg)](https://travis-ci.org/prtflio/resume_exporter)
 
-RésuméExporter is a tool to export résumé data from different sources (LinkedIn, Xing, Stackoverflow) to json or xml.
-
 You can use it as a [command-line tool](#from-the-command-line), as a [ruby library](#in-your-ruby-project) or online at [https://prtfl.io/](https://prtfl.io/).
 
 This is my first gem, contributions and feedback are welcome! Please be gentle.
 
-## TL;TR
+## Why?
 
-You can use RésuméExporter to extract resume data from linkedin, xing or stackoverflow to a json file looking like [that](https://github.com/programmercv/resume_exporter/blob/master/spec/fixtures/example.json)
+You can use RésuméExporter to extract resume data from linkedin, xing or stackoverflow to any format you like (.md, .yml, .xml, .pdf, .doc, .html).
 
-You can then use it to host your résumé online, with Github Pages and the ProgrammerCV [jekyll theme](https://github.com/programmercv/theme)
-
-... or export to .md, .yml, .xml, .pdf, .doc, .html
+If you export to a [json file](spec/fixtures/example.json) you can use that with the ProgammerCV [jekyll theme](https://github.com/programmercv/theme) to host your résumé online, on your own account with Github Pages.
 
 ## Installation
 
