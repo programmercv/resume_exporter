@@ -11,11 +11,17 @@ RésuméExporter
 
 RésuméExporter is a tool to export résumé data from different sources (LinkedIn, Xing, Stackoverflow) to json or xml.
 
-You can use it as a [command-line tool](#from-the-command-line), as a [ruby library](#in-your-ruby-project) or online at [https://prtfl.io/resume-exporter](https://prtfl.io/resume-exporter).
-
-Eventually, this tool is supposed to be one of the pieces of [https://prtfl.io/](https://prtfl.io/) (which is currently still work in progress, though)
+You can use it as a [command-line tool](#from-the-command-line), as a [ruby library](#in-your-ruby-project) or online at [https://prtfl.io/](https://prtfl.io/).
 
 This is my first gem, contributions and feedback are welcome! Please be gentle.
+
+## TL;TR
+
+You can use RésuméExporter to extract resume data from linkedin, xing or stackoverflow to a json file looking like [that](https://github.com/programmercv/resume_exporter/blob/master/spec/fixtures/example.json)
+
+You can then use it to host your résumé online, with Github Pages and the ProgrammerCV [jekyll theme](https://github.com/programmercv/theme)
+
+... or export to .md, .yml, .xml, .pdf, .doc, .html
 
 ## Installation
 
@@ -40,7 +46,7 @@ Then run `bundle install`
 
 #### LinkedIn:
 
-Go to your public profile [https://www.linkedin.com/public-profile/settings](here), or navigate to it via "Me" -> "View Profile" -> "Edit your public profile"  
+Go to your public profile at [https://www.linkedin.com/public-profile/settings](https://www.linkedin.com/public-profile/settings), or navigate to it via "Me" -> "View Profile" -> "Edit your public profile"  
 Save the page as "Web Page, HTML only". 
 
 #### Xing:
@@ -50,14 +56,14 @@ Save the page as "Web Page, HTML only".
 
 #### Stackoverflow:
 
-Go to your public profile (the old CV version, not the new developer story) [https://stackoverflow.com/cv/wnm](e.g. https://stackoverflow.com/cv/wnm)  
+Go to your public profile (the old CV version, not the new developer story) [e.g. https://stackoverflow.com/cv/wnm](https://stackoverflow.com/cv/wnm)  
 Save the page as "Web Page, HTML only". 
 
 ## Usage
 
 ### From the command line
 
-[#save-your-public-profile-as-html](Save your profile) as html.
+[Save your profile](#save-your-public-profile-as-html) as html.
 Then use the `resume_exporter` command to extract data.
 
 Example 1: extract resume data from .html file, and export as json:
