@@ -1,0 +1,383 @@
+<%= @data.dig(:basics, :name) %>
+
+<%= @data.dig(:basics, :label)  %>
+
+<%= @data.dig(:basics, :summary)  %>
+
+
+CONTACT
+  Email:  <%= @data.dig(:basics, :contact, :email) %>  
+  Phone: <%= @data.dig(:basics, :contact, :phone) %>  
+  Website: <%= @data.dig(:basics, :contact, :website) %>  
+  Address: <%= @data.dig(:basics, :contact, :location) %>  
+  <% for social in @data.dig(:basics, :contact, :social) %>
+  <%= social[:network] %>: <%= social[:user] %> (<%= social[:url] %>)
+  <% end %>
+
+
+WORK EXPERIENCE
+<%= @data.dig(:employment, :summary) %>  
+
+<% for job in @data.dig(:employment, :history) %>
+<%= job[:employer] %> (<%= job[:url] %>)
+
+  <%= job[:position] %> | <%= job[:startDate]  %> - <%= job[:endDate]  %>  
+  <%= job[:location]  %>  
+
+  <%= job[:summary]  %>  
+
+  Highlights:
+  <% for highlight in job[:highlights] %>
+  - <%= highlight %>
+  <% end %>
+
+  <%= job[:keywords].join(", ") %>  
+
+<% end %>
+
+EDUCATION
+<%= @data.dig(:education, :summary) %>  
+
+<% for entry in @data.dig(:education, :history) %>
+<%= entry[:institution] %> (<%= entry[:url] %>)
+
+  <%= entry[:fieldOfStudy] %>, <%= entry[:degree] %>, <%= entry[:grade] %> | <%= entry[:startDate] %> - <%= entry[:endDate] %>  
+  <%= entry[:location] %>  
+
+  <%= entry[:summary] %>  
+
+  Curriculum:  
+  <% for course in entry[:curriculum] %>
+  - <%= course %>  
+  <% end %>
+
+  Highlights:  
+  <% for highlight in entry[:highlights] %>
+  - <%= highlight %>  
+  <% end %>
+
+  <%= entry[:keywords].join(", ") %>  
+
+<% end %>
+
+
+PROJECTS
+<%= @data.dig(:projects, :summary) %>  
+
+<% for project in @data.dig(:projects, :history) %>
+<%= project[:title] %> (<%= project[:url] %>)
+
+  <%= project[:category] %>, <%= project[:repo] %>, <%= project[:repo] %> | <%= project[:startDate] %> - <%= project[:endDate] %>  
+
+  <%= project[:description] %>  
+
+  Roles:  
+  <% for role in project[:roles] %>
+  -<%= role %>
+  <% end %>
+
+
+  Highlights:  
+  <% for highlight in project[:highlights] %>
+  - <%= highlight %>  
+  <% end %>
+
+  <%= project[:keywords].join(", ") %>
+
+<% end %>
+
+
+
+OPEN SOURCE
+<%= @data.dig(:openSource, :summary) %>
+
+<% for project in @data.dig(:openSource, :history) %>
+<%= project[:title] %> (<%= project[:url] %>)  
+
+  <%= project[:category] %>, <%= project[:repo] %>, <%= project[:repo] %> | <%= project[:startDate] %> - <%= project[:endDate] %>  
+
+  <%= project[:description] %>  
+
+  Roles:  
+  <% for role in project[:roles] %>
+  -<%= role %>  
+  <% end %>
+
+
+  Highlights:  
+  <% for highlight in project[:highlights] %>
+  - <%= highlight %>  
+  <% end %>
+
+  <%= project[:keywords].join(", ") %>
+
+<% end %>
+
+
+SKILLS
+<%= @data.dig(:skills, :summary) %>  
+
+<% for skill in @data.dig(:skills, :sets) %>
+<%= skill[:name] %>  
+  <%= skill[:description] %>  
+  <%= skill[:keywords].join(", ") %>  
+
+<% end %>
+
+
+
+QUALIFICATIONS
+<%= @data.dig(:qualifications, :summary) %>  
+
+<% for qualification in @data.dig(:qualifications, :history) %>
+<%= qualification[:title] %> (<%= qualification[:url] %>)
+
+  <%= qualification[:category] %>, <%= qualification[:from] %> | <%= qualification[:startDate] %> - <%= qualification[:endDate] %>  
+
+  <%= qualification[:summary] %>  
+
+  Highlights:  
+  <% for highlight in qualification[:highlights] %>
+  - <%= highlight %>  
+  <% end %>
+
+  <%= qualification[:keywords].join(", ") %>
+
+<% end %>
+
+
+RECOGNITION
+<%= @data.dig(:recognition, :summary) %>  
+
+<% for entry in @data.dig(:recognition, :history) %>
+<%= entry[:title] %> (<%= entry[:url] %>)
+
+  <%= entry[:category] %>, <%= entry[:from] %> | <%= entry[:startDate] %> - <%= entry[:endDate] %>  
+
+  <%= entry[:summary] %>  
+
+  Highlights:  
+  <% for highlight in entry[:highlights] %>
+  - <%= highlight %>  
+  <% end %>
+
+  <%= entry[:keywords].join(", ") %>
+
+<% end %>
+
+
+WRITING
+<%= @data.dig(:writing, :summary) %>  
+
+<% for entry in @data.dig(:writing, :history) %>
+<%= entry[:title] %> (<%= entry[:url] %>)
+
+  <%= entry[:category] %>, <%= entry[:publisher] %> | <%= entry[:date] %>  
+
+  <%= entry[:summary] %>  
+
+  Highlights:  
+  <% for highlight in entry[:highlights] %>
+  - <%= highlight %>  
+  <% end %>
+
+  <%= entry[:keywords].join(", ") %>
+
+<% end %>
+
+
+READING
+<%= @data.dig(:reading, :summary) %>  
+
+<% for entry in @data.dig(:reading, :history) %>
+<%= entry[:title] %> (<%= entry[:url] %>)
+
+  <%= entry[:category] %>, <%= entry[:author] %> | <%= entry[:date] %>  
+
+  <%= entry[:summary] %>  
+
+  Highlights:  
+  <% for highlight in entry[:highlights] %>
+  - <%= highlight %>  
+  <% end %>
+
+  <%= entry[:keywords].join(", ") %>
+
+<% end %>
+
+
+SPEAKING
+<%= @data.dig(:speaking, :summary) %>  
+
+<% for entry in @data.dig(:speaking, :history) %>
+<%= entry[:title] %> (<%= entry[:url] %>)
+
+  <%= entry[:event] %>, <%= entry[:location] %> | <%= entry[:date] %>  
+
+  <%= entry[:summary] %>  
+
+  Highlights:  
+  <% for highlight in entry[:highlights] %>
+  - <%= highlight %>  
+  <% end %>
+
+  <%= entry[:keywords].join(", ") %>
+
+<% end %>
+
+
+PATENTS
+<%= @data.dig(:patents, :summary) %>  
+
+<% for patent in @data.dig(:patents, :history) %>
+<%= patent[:title] %> (<%= patent[:url] %>)
+
+  <%= patent[:number] %>, <%= patent[:status] %> | <%= patent[:date] %>  
+
+  <%= patent[:description] %>  
+
+  Highlights:  
+  <% for highlight in patent[:highlights] %>
+  - <%= highlight %>  
+  <% end %>
+
+  <%= patent[:keywords].join(", ") %>
+
+<% end %>
+
+
+LANGUAGES
+<%= @data.dig(:languages, :summary) %>  
+
+<% for language in @data.dig(:languages, :list) %>
+- <%= language[:language] %>, <%= language[:level] %> (<%= language[:years] %> years)  
+<% end %>
+
+
+INTEREST
+<%= @data.dig(:interests, :summary) %>  
+
+<% for interest in @data.dig(:interests, :list) %>
+<%= interest[:name] %>  
+  <%= interest[:description] %>  
+
+<% end %>
+
+
+EXTRACURRICULAR
+<%= @data.dig(:extracurriculars, :summary) %>  
+
+<% for entry in @data.dig(:extracurriculars, :history) %>
+
+<%= entry[:title] %> (<%= entry[:url] %>)
+
+  <%= entry[:category] %>, <%= entry[:location] %> | <%= entry[:startDate] %> - <%= entry[:endDate] %>  
+
+  <%= entry[:summary] %>  
+
+  Highlights:  
+  <% for highlight in entry[:highlights] %>
+  - <%= highlight %>  
+  <% end %>
+
+  <%= entry[:keywords].join(", ") %>
+<% end %>
+
+
+AFFILIATION
+<%= @data.dig(:affiliations, :summary) %>  
+
+<% for entry in @data.dig(:affiliations, :history) %>
+
+<%= entry[:organization] %> (<%= entry[:url] %>)
+
+  <%= entry[:category] %>, <%= entry[:location] %> | <%= entry[:startDate] %> - <%= entry[:endDate] %>  
+
+  <%= entry[:summary] %>  
+
+  Roles:  
+  <% for role in entry[:roles] %>
+  -<%= role %>  
+  <% end %>
+
+  Highlights:  
+  <% for highlight in entry[:highlights] %>
+  - <%= highlight %>  
+  <% end %>
+
+  <%= entry[:keywords].join(", ") %>
+<% end %>
+
+
+GOVERNANCE
+<%= @data.dig(:governance, :summary) %>  
+
+<% for entry in @data.dig(:governance, :history) %>
+
+<%= entry[:organization] %> (<%= entry[:url] %>)
+
+  <%= entry[:summary] %>  
+
+  <%= entry[:category] %> | <%= entry[:startDate] %> - <%= entry[:endDate] %>  
+
+  Roles:  
+  <% for role in entry[:roles] %>
+  -<%= role %>  
+  <% end %>
+
+  Highlights:  
+  <% for highlight in entry[:highlights] %>
+  - <%= highlight %>  
+  <% end %>
+
+  <%= entry[:keywords].join(", ") %>
+<% end %>
+
+
+SERVICE
+<%= @data.dig(:service, :summary) %>  
+
+<% for entry in @data.dig(:service, :history) %>
+
+<%= entry[:organization] %> (<%= entry[:url] %>)
+
+  <%= entry[:category] %>, <%= entry[:location] %> | <%= entry[:startDate] %> - <%= entry[:endDate] %>  
+
+  <%= entry[:summary] %>  
+
+  Roles:  
+  <% for role in entry[:roles] %>
+  -<%= role %>  
+  <% end %>
+
+  Highlights:  
+  <% for highlight in entry[:highlights] %>
+  - <%= highlight %>  
+  <% end %>
+
+  <%= entry[:keywords].join(", ") %>
+<% end %>
+
+
+REFERENCES
+<%= @data.dig(:references, :summary) %>  
+
+<% for reference in @data.dig(:references, :history) %>
+
+<%= reference[:name] %>  
+  <%= reference[:role] %>, <%= reference[:company] %>  
+
+  <%= reference[:summary] %>  
+
+<% end %>
+
+
+DISPOSITION
+<%= @data.dig(:disposition, :summary) %>  
+
+  Percentage of time willing to travel: <%= @data.dig(:disposition, :travel) %>  
+  Work authorization: <%= @data.dig(:disposition, :authorization) %>  
+  Types of work commitment desired: <%= @data.dig(:disposition, :commitment).join(", ") %>  
+  Open to remote employment opportunities: <%= @data.dig(:disposition, :remote) %>  
+  Willing to relocate: <%= @data.dig(:disposition, :relocation, :willing) %>  
+  Preferred destinations for relocation: <%= @data.dig(:disposition, :relocation, :destinations).join(", ") %>  

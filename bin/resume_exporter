@@ -3,36 +3,36 @@ require 'commander/import'
 require 'resume_exporter'
 
 program :version, '0.0.1'
-program :description, 'ResumeExporter is a tool to extract data from public profile html files.
+program :description, 'ResumeExporter is a tool to export data from public profile html files.
 Save your profile (e.g. from LinkedIn, Xing, or Stackoverflow) as html and export to json or xml with the help of ResumeExporter.
 
-Example 1: extract resume data from .html file, and export as json:
+Example 1: export resume data from .html file, and export as json:
 
     resume_exporter /path/to/your/profile.html
-    
 
-Example 2: extract resume data from .html file, export as json and save to file:
+
+Example 2: export resume data from .html file, export as json and save to file:
 
     resume_exporter /path/to/your/profile.html >> your_file.json
 
 
-Example 3: extract resume data from .html file, and export as xml
+Example 3: export resume data from .html file, and export as xml
 
     resume_exporter /path/to/your/profile.html --format xml
 
 
-Example 4: extract resume data from .html file, export as xml and save to file
+Example 4: export resume data from .html file, export as xml and save to file
 
     resume_exporter /path/to/your/profile.html --format xml >> your_file.xml'
 
-command :extract do |c|
-  c.syntax = 'resume_exporter extract [options]'
-  c.description = 'Extract resume data from <file>, and export as json or xml
+command :export do |c|
+  c.syntax = 'resume_exporter export [options]'
+  c.description = 'export resume data from <file>, and export as json or xml
           test.'
-  c.global_option '--format FORMAT', 'Specify the output format (default is json)'
-  c.example 'Extract resume data from .html file, and export as json', 'resume_exporter /path/to/your/profile.html'
-  c.example 'Extract resume data from .html file, and export as xml', 'resume_exporter /path/to/your/profile.html --format xml'
-  c.example 'Extract resume data from .html file, export as xml and save to file', 'resume_exporter /path/to/your/profile.html --format xml >> your_file.xml'
+  c.global_option '--format FORMAT', 'Specify the output format (default is json). You can choose json, xml, jsonresume, fresh, md, yaml'
+  c.example 'export resume data from .html file, and export as json', 'resume_exporter /path/to/your/profile.html'
+  c.example 'export resume data from .html file, and export as xml', 'resume_exporter /path/to/your/profile.html --format xml'
+  c.example 'export resume data from .html file, export as xml and save to file', 'resume_exporter /path/to/your/profile.html --format xml >> your_file.xml'
   c.action do |args, options|
     file = args.shift || abort('file argument required.')
 
@@ -40,12 +40,8 @@ command :extract do |c|
 
     r = ResumeExporter.new(file)
 
-    if options.format == "json"
-      say r.to_json
-    elsif options.format == "xml"
-      say r.to_xml
-    end
+    say r.export(format: options.format)
   end
 end
 
-default_command :extract
+default_command :export

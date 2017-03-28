@@ -40,12 +40,12 @@ Then run `bundle install`
 
 #### LinkedIn:
 
-Preview your profile [https://www.linkedin.com/profile/preview](here), or navigate to it via "Profile" -> "Edit Profile" -> "View profile as"  
+Go to your public profile [https://www.linkedin.com/public-profile/settings](here), or navigate to it via "Me" -> "View Profile" -> "Edit your public profile"  
 Save the page as "Web Page, HTML only". 
 
 #### Xing:
 
-Go to your public profile [https://www.xing.com/profile/Max_Mustermannn14](e.g. https://www.xing.com/profile/Max_Mustermannn14)  
+Go to your profile (sign in -> click on your name), and click on "Ansicht für Profilbesucher"
 Save the page as "Web Page, HTML only". 
 
 #### Stackoverflow:
@@ -57,7 +57,7 @@ Save the page as "Web Page, HTML only".
 
 ### From the command line
 
-Save your profile (e.g. from LinkedIn, Xing, or Stackoverflow) as html.
+[#save-your-public-profile-as-html](Save your profile) as html.
 Then use the `resume_exporter` command to extract data.
 
 Example 1: extract resume data from .html file, and export as json:
@@ -79,38 +79,40 @@ Example 4: extract resume data from .html file, export as xml and save to file
 
     resume_exporter /path/to/your/profile.html --format xml >> your_file.xml
 
+#### Formats
+
+Output format options are:
+
+- xml
+- json
+- json_resume ([Json Resume](https://jsonresume.org/))
+- fresh ([Fresh](https://github.com/fresh-standard/FRESCA))
+- md (Markdown)
+- yaml
+- txt
+
+Coming soon:
+
+- html
+- pdf
+- doc
+
 ### In your ruby project
 
 ```ruby
 require "resume_exporter"
-r = ResumeExporter.new("path/to/your/profile.html")
+file = "path/to/your/file"  #String or ruby Pathname
+r = ResumeExporter.new(file)
 
-r.to_json # returns all attributes as json
-r.to_xml # returns all attributes as xml
+r.export(format: "json") #or xml, yaml, md, fresh, jsonresume, hash
 
-# you can access individual attributes:
+# with the hash you can do the following:
 
-r.first_name
-r.last_name
-r.title
-r.picture
-r.location
-r.websites
-r.summary
-r.experience
-r.certifications
-r.education
-r.interests
-r.skills
-r.languages
-r.volunteer_experiences
-r.awards
-r.courses
-r.organizations
-r.test_scores
-r.patents
-r.projects
-r.open_source_projects
-r.publications
-r.technologies
+hash = r.export(format: "hash")
+
+hash.class #=> Hash
+
+hash.keys #=> [:meta, :basics, :employment, :education, :projects, :openSource, :skills, :qualifications, :recognition, :writing, :reading, :speaking, :patents, :languages, :interests, :extracurriculars, :affiliations, :governance, :service, :references, :disposition]
+
+hash[:basics] #=> {:name=>"Elliot Alderson", :label=>"Cybersecurity Engineer", :image=>"http://imagecdn.com/elliot.png", :summary=>"Imaginary software engineer with 10+ years industry experience specializing in cybersecurity.", :contact=>{:email=>"elliotalderson@lavabit.com", :phone=>"0001-0101-1010101111", :website=>"https://elliotalderson.com", :location=>"New York City, USA", :social=>[{:network=>"Github", :user=>"elliotalderson", :url=>"https://github.com/elliotalderson"}, {:network=>"Linkedin", :user=>"elliotalderson", :url=>"https://linkedin.com/elliotalderson"}]}}
 ```

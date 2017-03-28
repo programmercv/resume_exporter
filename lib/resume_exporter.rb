@@ -1,101 +1,40 @@
-require "nokogiri"
-
-ATTRIBUTES = %w(
-  name
-  first_name
-  last_name
-  title
-  picture
-  location
-  websites
-  summary
-  experience
-  certifications
-  education
-  interests
-  skills
-  languages
-  volunteer_experiences
-  awards
-  courses
-  organizations
-  test_scores
-  patents
-  projects
-  open_source_projects
-  publications
-  technologies
-)
-
-EXTRACTORS = %w(
-  linkedin_public_profile
-  linkedin_connection_profile
-  xing
-  stackoverflow
-)
-
-
-EXTRACTORS.each do |name|
-  require "extractors/#{name}"
-end
+require "extractors/factory"
+require "exporters/json"
+require "exporters/xml"
+require "exporters/md"
+require "exporters/txt"
+require "exporters/yaml"
 
 class ResumeExporter
-  ATTRIBUTES.each do |attr|
-    define_method attr.to_sym do
-      result = nil
+  def initialize(input)
+    if input.is_a?(String) || input.is_a?(Pathname)
+      # TODO: allow Json string
+      @data = Extractor::Factory.extractor_for(input).extract
+    elsif input.is_a?(Hash)
+      @data = input
+    end      
+  end
 
-      EXTRACTORS.each do |name|        
-        extractor = Extractor.const_get(classify_name(name)).new(@doc)
-        result = extractor.send(attr.to_sym) if extractor.respond_to?(attr.to_sym)
-        return result if result && !result.empty?
-      end
-
-      result
+  def export(options = {})
+    format = options[:format] || "json"
+    
+    case format.downcase
+    when "json"
+      Exporter::Json.export(data: @data)
+    when "fresh", "fresca"
+      Exporter::Json.export(data: @data, template: "fresh")
+    when "jsonresume", "json_resume", "json-resume"
+      Exporter::Json.export(data: @data, template: "json_resume")
+    when "xml"
+      Exporter::Xml.export(data: @data)
+    when "md"
+      Exporter::Md.export(data: @data)
+    when "yaml"
+      Exporter::Yaml.export(data: @data)
+    when "txt"
+      Exporter::Txt.export(data: @data)
+    when "hash"
+      @data
     end
-  end
-
-  def initialize(file_path)
-    if File.file?(file_path)
-      @doc = File.open(file_path) { |f| Nokogiri::HTML(f, nil, 'utf-8') } 
-    else
-      raise ArgumentError, "File not found"
-    end
-  end
-
-  def classify_name(filename)
-    filename.to_s.split("_").map{ |i| i[0...1].upcase + i[1..-1] }.join
-  end
-
-  def to_json
-    require 'json'
-    hash = ATTRIBUTES.reduce({}) { |hash, attr| hash[attr.to_sym] = self.send(attr.to_sym); hash }
-    JSON.pretty_generate(hash)
-  end
-
-  def to_xml
-    require 'builder'
-
-    string = ""
-    builder = Builder::XmlMarkup.new(:target=> string, :indent=>2)
-    builder.resume do |b| 
-      ATTRIBUTES.each do |attr|
-        result = self.send(attr.to_sym)
-        if result.kind_of?(Array)
-          b.tag!(attr) do
-            result.each do |entry|
-              b.tag!("#{attr}_entry") do
-                entry.each do |entry_attr, entry_value|
-                  b.tag!(entry_attr, entry_value)
-                end
-              end
-            end
-          end
-        else
-          b.tag! attr, result
-        end
-      end
-    end
-
-    string
   end
 end

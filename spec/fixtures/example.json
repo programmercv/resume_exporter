@@ -1,0 +1,513 @@
+{
+  "meta": {
+    "format": "PRTFLIO@0.0.1",
+    "version": "0.0.1"
+  },
+
+  "basics": {
+    "name": "Elliot Alderson",
+    "label": "Cybersecurity Engineer",
+    "image": "http://imagecdn.com/elliot.png",
+    "summary": "Imaginary software engineer with 10+ years industry experience specializing in cybersecurity.",
+    "contact": {
+      "email": "elliotalderson@lavabit.com",
+      "phone": "0001-0101-1010101111",
+      "website": "https://elliotalderson.com",
+      "location": "New York City, USA",
+      "social": [
+        {
+          "network": "Github",
+          "user": "elliotalderson",
+          "url": "https://github.com/elliotalderson"
+        },
+        {
+          "network": "Linkedin",
+          "user": "elliotalderson",
+          "url": "https://linkedin.com/elliotalderson"
+        }
+      ]
+    }
+  },
+
+  "employment": {
+    "summary": "My employment summary",
+    "history": [
+      {
+        "employer": "Allsafe Cybersecurity",
+        "position": "Cybersecurity Engineer",
+        "url": "https://allsafe.com",
+        "startDate": "01-01-2014",
+        "endDate": "01-01-2016",
+        "summary": "My summary of the job at allsafe cybersecurity.",
+        "location": "New York City, USA",
+        "highlights": ["Hightlight 1", "Hightlight 2", "Hightlight 3"],
+        "keywords": ["Keyword 1", "Keyword 2", "Keyword 3"]
+      },
+      {
+        "employer": "Company Two",
+        "position": "Position Title",
+        "url": "https://company.com",
+        "startDate": "01-01-2014",
+        "endDate": "01-01-2016",
+        "summary": "My summary of the job at company two.",
+        "location": "New York City, USA",
+        "highlights": ["Hightlight 1", "Hightlight 2", "Hightlight 3"],
+        "keywords": ["Keyword 1", "Keyword 2", "Keyword 3"]
+      }
+    ]
+  },
+
+  "education": {
+    "summary": "My education summary",
+    "history":[
+      {
+        "institution": "Harvard",
+        "fieldOfStudy": "Computer Science",
+        "degree": "Bachelor",
+        "startDate": "01-01-2010",
+        "endDate": "01-01-2011",
+        "grade": "1",
+        "url": "http://harvard.com/cs",
+        "summary": "Summary of my bachelor experience",
+        "location": "New York City, USA",
+        "curriculum": ["Course 1", "Course 2", "Course 3"],
+        "highlights": ["Hightlight 1", "Hightlight 2", "Hightlight 3"],
+        "keywords": ["Keyword 1", "Keyword 2", "Keyword 3"]
+      },
+      {
+        "institution": "Harvard",
+        "fieldOfStudy": "Computer Science",
+        "degree": "Master",
+        "startDate": "01-01-2010",
+        "endDate": "01-01-2011",
+        "grade": "1",
+        "url": "http://harvard.com/cs",
+        "summary": "Summary of my master experience",
+        "location": "New York City, USA",
+        "curriculum": ["Course 1", "Course 2", "Course 3"],
+        "highlights": ["Hightlight 1", "Hightlight 2", "Hightlight 3"],
+        "keywords": ["Keyword 1", "Keyword 2", "Keyword 3"]
+      }
+    ]
+  },
+
+  "projects": {
+    "summary": "Summary of my projects",
+    "history": [
+      {
+        "title": "Title of first project",
+        "description": "Description of first project",
+        "url": "Url  of first project",
+        "repo": "Repo  of first project",
+        "startDate": "Start date of first project",
+        "endDate": "End date of first project",
+        "category": "Category of first project",
+        "images": [{            
+          "thumbnail": "thumbnail.png",
+          "big": "big.png"
+        }],
+        "roles": ["Role 1", "Role 2"],
+        "highlights": ["Hightlight 1", "Hightlight 2", "Hightlight 3"],
+        "keywords": ["Keyword 1", "Keyword 2", "Keyword 3"]
+      },
+      {
+        "title": "Title of second project",
+        "description": "Description of second project",
+        "url": "Url  of second project",
+        "repo": "Repo  of second project",
+        "startDate": "Start date of second project",
+        "endDate": "End date of second project",
+        "category": "Category of second project",
+        "images": [{            
+          "thumbnail": "thumbnail.png",
+          "big": "big.png"
+        }],
+        "roles": ["Role 1", "Role 2"],
+        "highlights": ["Hightlight 1", "Hightlight 2", "Hightlight 3"],
+        "keywords": ["Keyword 1", "Keyword 2", "Keyword 3"]
+      }
+    ]
+  },
+
+  "openSource": {
+    "summary": "Summary of my open source projects",
+    "history": [
+      {
+        "title": "Title of first open source project",
+        "description": "Description of first open source project",
+        "url": "Url of first open source project",
+        "repo": "Repo of first open source project",
+        "startDate": "Start date of first open source project",
+        "endDate": "End date of first open source project",
+        "category": "Category of first open source project",
+        "roles": ["Role 1", "Role 2"],
+        "highlights": ["Hightlight 1", "Hightlight 2", "Hightlight 3"],
+        "keywords": ["Keyword 1", "Keyword 2", "Keyword 3"]
+      },
+      {
+        "title": "Title of second open source project",
+        "description": "Description of second open source project",
+        "url": "Url of second open source project",
+        "repo": "Repo of second open source project",
+        "startDate": "Start date of second open source project",
+        "endDate": "End date of second open source project",
+        "category": "Category of second open source project",
+        "roles": ["Role 1", "Role 2"],
+        "highlights": ["Hightlight 1", "Hightlight 2", "Hightlight 3"],
+        "keywords": ["Keyword 1", "Keyword 2", "Keyword 3"]
+      }
+    ]
+  },
+
+  "skills": {
+    "summary": "Summary of my skills",
+    "sets": [
+      {
+        "name": "Skill one",
+        "description": "Description of first skill",
+        "keywords": ["Keyword 1", "Keyword 2", "Keyword 3"]
+      },
+      {
+        "name": "Skill Two",
+        "description": "Description of second skill",
+        "keywords": ["Keyword 1", "Keyword 2", "Keyword 3"]
+      }
+    ]
+  },
+
+  "qualifications": {
+    "summary": "Summary of my qualifications",
+    "history": [
+      {
+        "category": "Category of first qualification",
+        "title": "Title of first qualification",
+        "startDate": "01.01.2014",
+        "endDate": "01.01.2015",
+        "from": "From of first qualification",
+        "summary": "Summary of first qualification",
+        "url": "Url of first qualification",
+        "highlights": ["Hightlight 1", "Hightlight 2", "Hightlight 3"],
+        "keywords": ["Keyword 1", "Keyword 2", "Keyword 3"]
+      },
+      {
+        "category": "Category of second qualification",
+        "title": "Title of second qualification",
+        "startDate": "01.01.2014",
+        "endDate": "01.01.2015",
+        "from": "From of second qualification",
+        "summary": "Summary of second qualification",
+        "url": "Url of second qualification",
+        "highlights": ["Hightlight 1", "Hightlight 2", "Hightlight 3"],
+        "keywords": ["Keyword 1", "Keyword 2", "Keyword 3"]
+      }
+    ]
+  },
+
+  "recognition": {
+    "summary": "Summary of my recognition",
+    "history": [
+      {
+        "category": "Category of my first recognition",
+        "title": "Title of my first recognition",
+        "startDate": "01-01-2010",
+        "endDate": "01-01-2011",
+        "from": "From of my first recognition",
+        "summary": "Summary of my first recognition",
+        "url": "Url of my first recognition",
+        "highlights": ["Hightlight 1", "Hightlight 2", "Hightlight 3"],
+        "keywords": ["Keyword 1", "Keyword 2", "Keyword 3"]
+      },
+      {
+        "category": "Category of my second recognition",
+        "title": "Title of my second recognition",
+        "startDate": "01-01-2011",
+        "endDate": "01-01-2013",
+        "from": "From of my second recognition",
+        "summary": "Summary of my second recognition",
+        "url": "Url of my second recognition",
+        "highlights": ["Hightlight 1", "Hightlight 2", "Hightlight 3"],
+        "keywords": ["Keyword 1", "Keyword 2", "Keyword 3"]
+      }
+    ]
+  },
+
+  "writing": {
+    "summary": "Summary of my writing experience",
+    "history": [
+      {
+        "title": "Title of my first writing",
+        "category": "Category of my first writing",
+        "date": "Date of my first writing",
+        "url": "Url of my first writing",
+        "publisher": "Publisher of my first writing",
+        "summary": "Summary of my first writing",
+        "highlights": ["Hightlight 1", "Hightlight 2", "Hightlight 3"],
+        "keywords": ["Keyword 1", "Keyword 2", "Keyword 3"]
+      },
+      {
+        "title": "Title of my second writing",
+        "category": "Category of my second writing",
+        "date": "Date of my second writing",
+        "url": "Url of my second writing",
+        "publisher": "Publisher of my second writing",
+        "summary": "Summary of my second writing",
+        "highlights": ["Hightlight 1", "Hightlight 2", "Hightlight 3"],
+        "keywords": ["Keyword 1", "Keyword 2", "Keyword 3"]
+      }
+    ]
+  },
+
+  "reading": {
+    "summary": "Summary of my reading habbits",
+    "history": [
+      {
+        "title": "Title of my first reading entry",
+        "category": "Category of my first reading entry",
+        "url": "Url of my first reading entry",
+        "author": "Author of my first reading entry",
+        "date": "Date of my first reading entry",
+        "summary": "Summary of my first reading entry",
+        "highlights": ["Hightlight 1", "Hightlight 2", "Hightlight 3"],
+        "keywords": ["Keyword 1", "Keyword 2", "Keyword 3"]
+      },
+      {
+        "title": "Title of my second reading entry",
+        "category": "Category of my second reading entry",
+        "url": "Url of my second reading entry",
+        "author": "Author of my second reading entry",
+        "date": "Date of my second reading entry",
+        "summary": "Summary of my second reading entry",
+        "highlights": ["Hightlight 1", "Hightlight 2", "Hightlight 3"],
+        "keywords": ["Keyword 1", "Keyword 2", "Keyword 3"]
+      }
+    ]
+  },
+
+  "speaking": {
+    "summary": "Summary of my speaking experience",
+    "history": [
+      {
+        "title": "Title of my first speaking event",
+        "event": "Name of my first speaking event",
+        "location": "Location of my first speaking event",
+        "url": "Url of my first speaking event",
+        "date": "Date of my first speaking event",
+        "summary": "Summary of my first speaking event",
+        "highlights": ["Hightlight 1", "Hightlight 2", "Hightlight 3"],
+        "keywords": ["Keyword 1", "Keyword 2", "Keyword 3"]
+      },
+      {
+        "title": "Title of my second speaking event",
+        "event": "Name of my second speaking event",
+        "location": "Location of my second speaking event",
+        "url": "Url of my second speaking event",
+        "date": "Date of my second speaking event",
+        "summary": "Summary of my second speaking event",
+        "highlights": ["Hightlight 1", "Hightlight 2", "Hightlight 3"],
+        "keywords": ["Keyword 1", "Keyword 2", "Keyword 3"]
+      }
+    ]
+  },
+
+  "patents": {
+    "summary": "Summary of my patents",
+    "history": [
+      {
+        "title": "Title of my first patent",
+        "url": "Url of my first patent",
+        "number": "Number of my first patent",
+        "status": "Status of my first patent",
+        "description": "Description of my first patent",
+        "date": "Date of my first patent",
+        "highlights": ["Hightlight 1", "Hightlight 2", "Hightlight 3"],
+        "keywords": ["Keyword 1", "Keyword 2", "Keyword 3"]
+      },
+      {
+        "title": "Title of my first patent",
+        "url": "Url of my first patent",
+        "number": "Number of my first patent",
+        "status": "Status of my first patent",
+        "description": "Description of my first patent",
+        "date": "Date of my first patent",
+        "highlights": ["Hightlight 1", "Hightlight 2", "Hightlight 3"],
+        "keywords": ["Keyword 1", "Keyword 2", "Keyword 3"]
+      }
+    ]
+  },
+
+  "languages": {
+    "summary": "Summary of my language experience",
+    "list": [
+      {
+        "language": "English",
+        "level": "Native",
+        "years": "26"
+      },
+      {
+        "language": "French",
+        "level": "Elementary",
+        "years": "2"
+      }
+    ]
+  },
+
+  "interests": {
+    "summary": "Summary of my interests",
+    "list": [
+      {
+        "name": "First Interest",
+        "description": "Description of first interest"
+      },
+      {
+        "name": "second Interest",
+        "description": "Description of second interest"
+      }
+    ]
+  },
+
+  "extracurriculars": {
+    "summary": "Summary of my extracurricular involvement",
+    "history": [
+      {
+        "title": "Title of my first extracurricular involvement",
+        "summary": "Summary of my first extracurricular involvement",
+        "category": "Category of my first extracurricular involvement",
+        "location": "Location of my first extracurricular involvement",
+        "url": "http://involvement",
+        "startDate": "Start date of my first extracurricular involvement",
+        "endDate": "End date of my first extracurricular involvement",
+        "highlights": ["Hightlight 1", "Hightlight 2", "Hightlight 3"],
+        "keywords": ["Keyword 1", "Keyword 2", "Keyword 3"]
+      },
+      {
+        "title": "Title of my second extracurricular involvement",
+        "summary": "Summary of my second extracurricular involvement",
+        "category": "Category of my second extracurricular involvement",
+        "url": "http://involvement",
+        "location": "Location of my second extracurricular involvement",
+        "startDate": "Start date of my second extracurricular involvement",
+        "endDate": "End date of my second extracurricular involvement",
+        "highlights": ["Hightlight 1", "Hightlight 2", "Hightlight 3"],
+        "keywords": ["Keyword 1", "Keyword 2", "Keyword 3"]
+      }
+    ]
+  },
+
+  "affiliations": {
+    "summary": "Summary of my affiliation",
+    "history": [
+      {
+        "category": "Category of my first affiliation",
+        "organization": "organization of my first affiliation",
+        "roles": ["Role 1", "Role 2"],
+        "url": "Url of my first affiliation",
+        "startDate": "Start date of my first affiliation",
+        "endDate": "End date of my first affiliation",
+        "summary": "Summary of my first affiliation",
+        "location": "Location of my first affiliation",
+        "highlights": ["Hightlight 1", "Hightlight 2", "Hightlight 3"],
+        "keywords": ["Keyword 1", "Keyword 2", "Keyword 3"]
+      },
+      {
+        "category": "Category of my second affiliation",
+        "organization": "organization of my second affiliation",
+        "roles": ["Role 1", "Role 2"],
+        "url": "Url of my second affiliation",
+        "startDate": "Start date of my second affiliation",
+        "endDate": "End date of my second affiliation",
+        "summary": "Summary of my second affiliation",
+        "location": "Location of my second affiliation",
+        "highlights": ["Hightlight 1", "Hightlight 2", "Hightlight 3"],
+        "keywords": ["Keyword 1", "Keyword 2", "Keyword 3"]
+      }
+    ]
+  },
+
+  "governance": {
+    "summary": "Summary of my governance experience",
+    "history": [
+      {
+        "summary": "Summary of my first governance experience",
+        "category": "Category of my first governance experience",
+        "roles": ["Role 1", "Role 2"],
+        "organization": "Organization of my first governance experience",
+        "url": "http://Organization",
+        "startDate": "Start date of my first governance experience",
+        "endDate": "End date of my first governance experience",
+        "keywords": ["Keyword 1", "Keyword 2", "Keyword 3"],
+        "highlights": ["Hightlight 1", "Hightlight 2", "Hightlight 3"]
+      },
+      {
+        "summary": "Summary of my second governance experience",
+        "category": "Category of my second governance experience",
+        "url": "http://experience",
+        "roles": ["Role 1", "Role 2"],
+        "organization": "Organization of my second governance experience",
+        "startDate": "Start date of my second governance experience",
+        "endDate": "End date of my second governance experience",
+        "keywords": ["Keyword 1", "Keyword 2", "Keyword 3"],
+        "highlights": ["Hightlight 1", "Hightlight 2", "Hightlight 3"]
+      }
+    ]
+  },
+
+  "service": {
+    "summary": "Summary of my service experience",
+    "history": [
+      {
+        "category": "Category of my first service experience",
+        "organization": "Organization of my first service experience",
+        "roles": ["Role 1", "Role 2"],
+        "url": "Url of my first service experience",
+        "startDate": "Start date of my first service experience",
+        "endDate": "End date of my first service experience",
+        "summary": "Summary of my first service experience",
+        "location": "Location of my first service experience",
+        "highlights": ["Hightlight 1", "Hightlight 2", "Hightlight 3"],
+        "keywords": ["Keyword 1", "Keyword 2", "Keyword 3"]
+      },
+      {
+        "category": "Category of my second service experience",
+        "organization": "Organization of my second service experience",
+        "roles": ["Role 1", "Role 2"],
+        "url": "Url of my second service experience",
+        "startDate": "Start date of my second service experience",
+        "endDate": "End date of my second service experience",
+        "summary": "Summary of my second service experience",
+        "location": "Location of my second service experience",
+        "highlights": ["Hightlight 1", "Hightlight 2", "Hightlight 3"],
+        "keywords": ["Keyword 1", "Keyword 2", "Keyword 3"]
+      }
+    ]
+  },
+
+  "references": {
+    "summary": "Summary of my references",
+    "history": [
+      {
+        "name": "Angela Moss",
+        "role": "Account Executive",
+        "company": "Allsafe Cybersecurity",
+        "summary": "Elliot is a very loyal and competent employee."
+      },
+      {
+        "name": " Gideon Goddard ",
+        "role": "CEO",
+        "company": "Allsafe Cybersecurity",
+        "summary": "Elliot is a very loyal and competent employee."
+      }
+    ]
+  },
+
+  "disposition": {
+    "summary": "Summary of my work disposition",    
+    "travel": 20,
+    "authorization": "Visa for USA",
+    "commitment": ["Full time work"],
+    "remote": true,
+    "relocation": {
+      "willing": true,
+      "destinations": ["Europe", "Hong Kong"]
+    }    
+  }
+}
