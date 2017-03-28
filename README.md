@@ -8,9 +8,9 @@ RésuméExporter is a tool to export résumé data from different sources (Linke
 RésuméExporter
 ============
 
-[![License](https://img.shields.io/badge/license-MIT-green.svg?style=flat)](https://github.com/prtflio/resume_exporter/blob/master/LICENSE)
+[![License](https://img.shields.io/badge/license-MIT-green.svg?style=flat)](https://github.com/programmercv/resume_exporter/blob/master/LICENSE)
 [![Gem](https://img.shields.io/gem/v/resume_exporter.svg?style=flat)](https://rubygems.org/gems/resume_exporter)
-[![Travis](https://img.shields.io/travis/prtflio/resume_exporter.svg)](https://travis-ci.org/prtflio/resume_exporter)
+[![Travis](https://img.shields.io/travis/programmercv/resume_exporter.svg)](https://travis-ci.org/programmercv/resume_exporter)
 
 You can use it as a [command-line tool](#from-the-command-line), as a [ruby library](#in-your-ruby-project) or online at [https://prtfl.io/](https://prtfl.io/).
 
