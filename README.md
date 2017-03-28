@@ -50,7 +50,7 @@ Save the page as "Web Page, HTML only".
 
 #### Xing:
 
-Go to your profile (sign in -> click on your name), and click on "Ansicht für Profilbesucher"
+Go to your profile (sign in -> click on your name), and click on "Ansicht für Profilbesucher"  
 Save the page as "Web Page, HTML only". 
 
 #### Stackoverflow:
