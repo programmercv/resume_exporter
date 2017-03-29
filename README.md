@@ -69,9 +69,9 @@ Example: extract resume data from .html file, and export as json:
 
     resume_exporter /path/to/your/profile.html
 
-That command will return a string, that looks like [that](spec/fixtures/example.json)
+That command will return a json formatted string, that looks like [that](spec/fixtures/example.json)
     
-To save that string in a json file, run:
+To save the output in a file, run:
 
     resume_exporter /path/to/your/profile.html >> your_file.json
 
