@@ -20,7 +20,7 @@ This is my first gem, contributions and feedback are welcome! Please be gentle.
 
 Because you might need your résumé data in a different format, but don't want to retype everything.
 
-Also: If you export to a [json file](spec/fixtures/example.json) you can use that with the ProgammerCV [jekyll theme](https://github.com/programmercv/theme) to host your résumé online.
+Also: If you export to a [json file](spec/fixtures/example.json) you can use that with the ProgammerCV [jekyll theme](https://github.com/programmercv/theme) to host a html version of your résumé online.
 
 ## Installation
 
@@ -65,23 +65,22 @@ Save the page as "Web Page, HTML only".
 [Save your profile](#save-your-public-profile-as-html) as html.
 Then use the `resume_exporter` command to extract data.
 
-Example 1: extract resume data from .html file, and export as json:
+Example: extract resume data from .html file, and export as json:
 
     resume_exporter /path/to/your/profile.html
-    
 
-Example 2: extract resume data from .html file, export as json and save to file:
+That command will return a string, that looks like [that](spec/fixtures/example.json)
+    
+To save that string in a json file, run:
 
     resume_exporter /path/to/your/profile.html >> your_file.json
 
-
-Example 3: extract resume data from .html file, and export as xml
+To export to other formats, run:
 
     resume_exporter /path/to/your/profile.html --format xml
 
-
-Example 4: extract resume data from .html file, export as xml and save to file
-
+    or
+    
     resume_exporter /path/to/your/profile.html --format xml >> your_file.xml
 
 #### Formats
