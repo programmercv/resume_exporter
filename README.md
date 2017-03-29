@@ -101,6 +101,10 @@ Coming soon:
 - pdf
 - doc
 
+#### Default output format
+
+The default output format is a json string, based on [this](https://github.com/programmercv/schema) JSON Schema Definition
+
 ### In your ruby project
 
 ```ruby
