@@ -118,5 +118,29 @@ hash.class #=> Hash
 
 hash.keys #=> [:meta, :basics, :employment, :education, :projects, :openSource, :skills, :qualifications, :recognition, :writing, :reading, :speaking, :patents, :languages, :interests, :extracurriculars, :affiliations, :governance, :service, :references, :disposition]
 
-hash[:basics] #=> {:name=>"Elliot Alderson", :label=>"Cybersecurity Engineer", :image=>"http://imagecdn.com/elliot.png", :summary=>"Imaginary software engineer with 10+ years industry experience specializing in cybersecurity.", :contact=>{:email=>"elliotalderson@lavabit.com", :phone=>"0001-0101-1010101111", :website=>"https://elliotalderson.com", :location=>"New York City, USA", :social=>[{:network=>"Github", :user=>"elliotalderson", :url=>"https://github.com/elliotalderson"}, {:network=>"Linkedin", :user=>"elliotalderson", :url=>"https://linkedin.com/elliotalderson"}]}}
+hash[:basics] 
+# =>
+# {
+#   :name=>"Elliot Alderson",
+#   :label=>"Cybersecurity Engineer",
+#   :image=>"http://imagecdn.com/elliot.png",
+#   :summary=>"Imaginary software engineer with 10+ years industry experience specializing in cybersecurity.",
+#   :contact=> { 
+#     :email=>"elliotalderson@lavabit.com",
+#     :phone=>"0001-0101-1010101111",
+#     :website=>"https://elliotalderson.com",
+#     :location=>"New York City, USA",
+#     :social=> [
+#       {
+#         :network=>"Github",
+#         :user=>"elliotalderson",
+#         :url=>"https://github.com/elliotalderson"
+#       },
+#       {
+#         :network=>"Linkedin",
+#         :user=>"elliotalderson",
+#         :url=>"https://linkedin.com/elliotalderson"}
+#     ]
+#   }
+# }
 ```
