@@ -8,7 +8,7 @@ Gem::Specification.new do |gem|
   gem.email       = 'hi@wnm.io'
   gem.files       = Dir['lib/**/*']
   gem.homepage    =
-    'http://rubygems.org/gems/resume_exporter'
+    'http://programmercv.com/resume-exporter'
   gem.license       = 'MIT'
   gem.executables << 'resume_exporter'
 
