@@ -7,8 +7,8 @@
   "basics": {
     "name": "Elliot Alderson",
     "label": "Cybersecurity Engineer",
-    "image": "http://imagecdn.com/elliot.png",
-    "summary": "Imaginary software engineer with 10+ years industry experience specializing in cybersecurity.",
+    "image": "http://40.media.tumblr.com/31d92e5030572f2d0b58ccf0b8931c68/tumblr_o1jnk8J4Bv1uba6jio1_250.jpg",
+    "summary": "Highly talented and accomplished IT professional with 10+ years industry experience specializing in cybersecurity. Proven ability to deploy, administrate, maintain and secure IT infrastructures. Also, I'm an imaginary software engineer from the american drama–thriller television series <i>Mr. Robot</i>, created by Sam Esmail.",
     "contact": {
       "email": "elliotalderson@lavabit.com",
       "phone": "0001-0101-1010101111",
@@ -30,313 +30,279 @@
   },
 
   "employment": {
-    "summary": "My employment summary",
+    "summary": "10+ years industry experience specializing in cybersecurity",
     "history": [
       {
         "employer": "Allsafe Cybersecurity",
-        "position": "Cybersecurity Engineer",
+        "position": "Chief Cybersecurity Engineer",
         "url": "https://allsafe.com",
         "startDate": "01-01-2014",
         "endDate": "01-01-2016",
-        "summary": "My summary of the job at allsafe cybersecurity.",
+        "summary": "At my job with Allsafe Cybersecurity I'm responsible with maintaining and securing client IT infrastructures.",
         "location": "New York City, USA",
-        "highlights": ["Hightlight 1", "Hightlight 2", "Hightlight 3"],
-        "keywords": ["Keyword 1", "Keyword 2", "Keyword 3"]
+        "highlights": [
+          "Developed and implemented online security procedures",
+          "Worked with management to set security standards and manuals"
+        ],
+        "keywords": ["IAM", "UNIX", "IPSec", "VPN", "EIGRP"]
       },
       {
-        "employer": "Company Two",
-        "position": "Position Title",
-        "url": "https://company.com",
-        "startDate": "01-01-2014",
-        "endDate": "01-01-2016",
-        "summary": "My summary of the job at company two.",
+        "employer": "BigCorp Inc.",
+        "position": "Cybersecurity Engineer",
+        "url": "https://bigcorp.com",
+        "startDate": "01-01-2012",
+        "endDate": "01-01-2014",
+        "summary": "My responsibility at BigCorp Inc. was to find holes in their system, until it was 'hacker-proof'.",
         "location": "New York City, USA",
-        "highlights": ["Hightlight 1", "Hightlight 2", "Hightlight 3"],
-        "keywords": ["Keyword 1", "Keyword 2", "Keyword 3"]
+        "highlights": [
+          "Developed complicated network infrastructure from scratch",
+          "Secured running applications and full network infrastructure"
+        ],
+        "keywords": ["OSPF", "BGP", "SSH", "ModSecurity", "Fail2Ban", "RKHunter", "Nmap"]
       }
     ]
   },
 
   "education": {
-    "summary": "My education summary",
+    "summary": "I received a Bachelor's degree in Computer Sience from Columbia University, New York City. I then specialized with a Master's degree in Computer Security also at CU NY.",
     "history":[
       {
-        "institution": "Harvard",
-        "fieldOfStudy": "Computer Science",
-        "degree": "Bachelor",
-        "startDate": "01-01-2010",
-        "endDate": "01-01-2011",
-        "grade": "1",
-        "url": "http://harvard.com/cs",
-        "summary": "Summary of my bachelor experience",
-        "location": "New York City, USA",
-        "curriculum": ["Course 1", "Course 2", "Course 3"],
-        "highlights": ["Hightlight 1", "Hightlight 2", "Hightlight 3"],
-        "keywords": ["Keyword 1", "Keyword 2", "Keyword 3"]
-      },
-      {
-        "institution": "Harvard",
-        "fieldOfStudy": "Computer Science",
+        "institution": "Columbia University",
+        "fieldOfStudy": "Computer Security",
         "degree": "Master",
         "startDate": "01-01-2010",
         "endDate": "01-01-2011",
-        "grade": "1",
-        "url": "http://harvard.com/cs",
-        "summary": "Summary of my master experience",
+        "grade": "4.0 gpa",
+        "url": "http://www.cs.columbia.edu/education/ms/newComputerSecurity/",
         "location": "New York City, USA",
-        "curriculum": ["Course 1", "Course 2", "Course 3"],
-        "highlights": ["Hightlight 1", "Hightlight 2", "Hightlight 3"],
-        "keywords": ["Keyword 1", "Keyword 2", "Keyword 3"]
+        "curriculum": ["Advanced Internet Services", "Advanced Cryptography", "Intrusion and Anomaly Detection Systems"],
+        "highlights": [
+          "Intrusion and Anomaly Detection Systems",
+          "Computer Communication Networks"
+        ],
+        "keywords": ["Computer Security"]
+      },
+      {
+        "institution": "Columbia University",
+        "fieldOfStudy": "Computer Science",
+        "degree": "Bachelor",
+        "startDate": "01-01-2008",
+        "endDate": "01-01-2011",
+        "url": "http://www.cs.columbia.edu/",
+        "location": "New York City, USA",
+        "curriculum": ["Network Security", "Adv. Software Engineering", "Security Architecture and Engineering"],
+        "highlights": [
+          "Advanced Database Systems",
+          "Advanced Machine Learning"
+        ],
+        "keywords": ["Computer Science"]
       }
     ]
   },
 
   "projects": {
-    "summary": "Summary of my projects",
+    "summary": "In my spare time I like to play around with new technologies. I'm always trying to improve my skills as a security expert, and personal projects are a great way to do that.",
     "history": [
       {
-        "title": "Title of first project",
-        "description": "Description of first project",
-        "url": "Url  of first project",
-        "repo": "Repo  of first project",
-        "startDate": "Start date of first project",
-        "endDate": "End date of first project",
-        "category": "Category of first project",
-        "images": [{            
-          "thumbnail": "thumbnail.png",
-          "big": "big.png"
-        }],
-        "roles": ["Role 1", "Role 2"],
-        "highlights": ["Hightlight 1", "Hightlight 2", "Hightlight 3"],
-        "keywords": ["Keyword 1", "Keyword 2", "Keyword 3"]
-      },
-      {
-        "title": "Title of second project",
-        "description": "Description of second project",
-        "url": "Url  of second project",
-        "repo": "Repo  of second project",
-        "startDate": "Start date of second project",
-        "endDate": "End date of second project",
-        "category": "Category of second project",
-        "images": [{            
-          "thumbnail": "thumbnail.png",
-          "big": "big.png"
-        }],
-        "roles": ["Role 1", "Role 2"],
-        "highlights": ["Hightlight 1", "Hightlight 2", "Hightlight 3"],
-        "keywords": ["Keyword 1", "Keyword 2", "Keyword 3"]
+        "title": "OpenDoor",
+        "description": "A tool to check a system for open ports and other known security holes",
+        "url": "https://opendoor.org",
+        "repo": "https://github.com/elliotalderson/opendoor",
+        "startDate": "01.01.2014",
+        "endDate": "Present",
+        "category": "Desktop Application",
+        "roles": ["Lead Developer"],
+        "highlights": [
+          "#1 top rated app in iTunes category 'Security Application'",
+          "Over 1.3 million downloads",
+        ],
+        "keywords": ["C++"]
       }
     ]
   },
 
   "openSource": {
-    "summary": "Summary of my open source projects",
+    "summary": "I'm also involved in several open-source projects related to online security, privacy and user freedom.",
     "history": [
       {
-        "title": "Title of first open source project",
-        "description": "Description of first open source project",
-        "url": "Url of first open source project",
-        "repo": "Repo of first open source project",
-        "startDate": "Start date of first open source project",
-        "endDate": "End date of first open source project",
-        "category": "Category of first open source project",
-        "roles": ["Role 1", "Role 2"],
-        "highlights": ["Hightlight 1", "Hightlight 2", "Hightlight 3"],
-        "keywords": ["Keyword 1", "Keyword 2", "Keyword 3"]
+        "title": "Tor",
+        "description": "Tor is free software and an open network that helps you defend against traffic analysis, a form of network surveillance that threatens personal freedom and privacy, confidential business activities and relationships, and state security.",
+        "url": "https://www.torproject.org/",
+        "repo": "https://gitweb.torproject.org/tor.git",
+        "startDate": "01.01.2010",
+        "endDate": "Present",
+        "category": "Desktop Application",
+        "roles": ["Contributor", "Developer"],
+        "highlights": [
+          "Over 50 of my patches were accepted and merged into the core code base"
+        ],
+        "keywords": ["C"]
       },
       {
-        "title": "Title of second open source project",
-        "description": "Description of second open source project",
-        "url": "Url of second open source project",
-        "repo": "Repo of second open source project",
-        "startDate": "Start date of second open source project",
-        "endDate": "End date of second open source project",
-        "category": "Category of second open source project",
-        "roles": ["Role 1", "Role 2"],
-        "highlights": ["Hightlight 1", "Hightlight 2", "Hightlight 3"],
-        "keywords": ["Keyword 1", "Keyword 2", "Keyword 3"]
+        "title": "F-coin",
+        "description": "F-coin is a peer-to-peer cryptocurrency and open source software project released under the MIT/X11 license",
+        "url": "http://fcoin.org",
+        "repo": "http://git.fcoin.org",
+        "startDate": "01.01.2015",
+        "endDate": "Present",
+        "category": "Cryptocurrency",
+        "roles": ["Contributor", "Core Team Member"],
+        "highlights": [
+          "Voted #1 most promising bitcoin alternative by Mashable",
+          "Market cap of $2.4 B"
+        ],
+        "keywords": ["Cryptocurrency", "C++"]
       }
     ]
   },
 
   "skills": {
-    "summary": "Summary of my skills",
+    "summary": "I have been programming for over 20 years, 10 of those professionaly as an employed software engineer. In the last 5 years of my career I have specialized in cyber security.",
     "sets": [
       {
-        "name": "Skill one",
-        "description": "Description of first skill",
-        "keywords": ["Keyword 1", "Keyword 2", "Keyword 3"]
+        "name": "Computer Security",
+        "description": "Although to completely secure a system you have to know every layer of the stack, there are some common tools that I use on a regular basis.",
+        "keywords": ["OSPF", "BGP", "SSH", "ModSecurity", "Fail2Ban", "RKHunter", "Nmap", "IAM", "UNIX", "IPSec", "VPN", "EIGRP"]
       },
       {
-        "name": "Skill Two",
-        "description": "Description of second skill",
-        "keywords": ["Keyword 1", "Keyword 2", "Keyword 3"]
+        "name": "Programming",
+        "description": "I use the tool which is right for the job, and I am certain I can pick up any programming language that is necessary to get the task done.",
+        "keywords": ["C", "C++", "Java", "PHP"]
       }
     ]
   },
 
   "qualifications": {
-    "summary": "Summary of my qualifications",
+    "summary": "Additionally to my bachelor and master degree I try to keep up with current technology, by taking part in online courses and getting certified by third party vendors.",
     "history": [
       {
-        "category": "Category of first qualification",
-        "title": "Title of first qualification",
-        "startDate": "01.01.2014",
-        "endDate": "01.01.2015",
-        "from": "From of first qualification",
-        "summary": "Summary of first qualification",
-        "url": "Url of first qualification",
-        "highlights": ["Hightlight 1", "Hightlight 2", "Hightlight 3"],
-        "keywords": ["Keyword 1", "Keyword 2", "Keyword 3"]
+        "category": "Course",
+        "title": "Cybersecurity Specialization",
+        "startDate": "01.01.2015",
+        "endDate": "End date of first qualification",
+        "from": "University of Maryland",
+        "summary": "The Cybersecurity Specialization covers the fundamental concepts underlying the construction of secure systems, from the hardware to the software to the human-computer interface, with the use of cryptography to secure interactions.",
+        "url": "https://www.coursera.org/specializations/cyber-security#courses",
+        "highlights": [
+          "Learned foundations of modern cryptography, with an eye toward practical applications.",
+          "Applied security and trust from the hardware perspective",
+          "Understand the vulnerabilities in current digital system design flow and the physical attacks to these systems"
+        ],
+        "keywords": ["Cryptography", "Hardware Security", "Software Security"]
       },
       {
-        "category": "Category of second qualification",
-        "title": "Title of second qualification",
-        "startDate": "01.01.2014",
-        "endDate": "01.01.2015",
-        "from": "From of second qualification",
-        "summary": "Summary of second qualification",
-        "url": "Url of second qualification",
-        "highlights": ["Hightlight 1", "Hightlight 2", "Hightlight 3"],
-        "keywords": ["Keyword 1", "Keyword 2", "Keyword 3"]
+        "category": "Certification",
+        "title": "ITIL® Master Qualification (ITILMA)",
+        "startDate": "01.01.2012",
+        "endDate": "Present",
+        "from": "Exin",
+        "summary": "The ITIL Master Qualification Certificate validates the capability of the candidate to apply the principles, methods and techniques from ITIL in the workplace.",
+        "url": "https://www.exin.com/NL/en/certifications/&fw=itil-v3",
+        "highlights": [
+          "The ITIL Master Qualification is the highest level in the Official ITIL Qualification Scheme",
+          "The ITIL Master builds upon the knowledge gained through the core qualification scheme and validates practical application of the ITIL framework in the work place."
+        ],
+        "keywords": ["Problem Management", "IS Governance", "Risk Management"]
       }
     ]
   },
 
   "recognition": {
-    "summary": "Summary of my recognition",
+    "summary": "",
     "history": [
       {
-        "category": "Category of my first recognition",
-        "title": "Title of my first recognition",
-        "startDate": "01-01-2010",
-        "endDate": "01-01-2011",
-        "from": "From of my first recognition",
-        "summary": "Summary of my first recognition",
-        "url": "Url of my first recognition",
-        "highlights": ["Hightlight 1", "Hightlight 2", "Hightlight 3"],
-        "keywords": ["Keyword 1", "Keyword 2", "Keyword 3"]
-      },
-      {
-        "category": "Category of my second recognition",
-        "title": "Title of my second recognition",
-        "startDate": "01-01-2011",
-        "endDate": "01-01-2013",
-        "from": "From of my second recognition",
-        "summary": "Summary of my second recognition",
-        "url": "Url of my second recognition",
-        "highlights": ["Hightlight 1", "Hightlight 2", "Hightlight 3"],
-        "keywords": ["Keyword 1", "Keyword 2", "Keyword 3"]
+        "category": "Award",
+        "title": "Google Summer of Code",
+        "startDate": "01.01.2012",
+        "endDate": "",
+        "from": "Google",
+        "summary": "Google Summer of Code is a global program that offers post-secondary student developers stipends to write code for various open source software projects. ",
+        "url": "https://en.wikipedia.org/wiki/Google_Summer_of_Code",
+        "highlights": [
+          "Paired with a mentor from participating projects, exposing them to real-world software development",
+          "Great opportunity to work on a large, and extremely popular open source project"
+        ],
+        "keywords": ["Java"]
       }
     ]
   },
 
   "writing": {
-    "summary": "Summary of my writing experience",
+    "summary": "After extensive studying and exploring current technologies in the cryptography field, I summarized my findings in my first book 'Applied Cryptography'",
     "history": [
       {
-        "title": "Title of my first writing",
-        "category": "Category of my first writing",
-        "date": "Date of my first writing",
-        "url": "Url of my first writing",
-        "publisher": "Publisher of my first writing",
-        "summary": "Summary of my first writing",
-        "highlights": ["Hightlight 1", "Hightlight 2", "Hightlight 3"],
-        "keywords": ["Keyword 1", "Keyword 2", "Keyword 3"]
-      },
-      {
-        "title": "Title of my second writing",
-        "category": "Category of my second writing",
-        "date": "Date of my second writing",
-        "url": "Url of my second writing",
-        "publisher": "Publisher of my second writing",
-        "summary": "Summary of my second writing",
-        "highlights": ["Hightlight 1", "Hightlight 2", "Hightlight 3"],
-        "keywords": ["Keyword 1", "Keyword 2", "Keyword 3"]
+        "title": "Applied Cryptography",
+        "category": "Book",
+        "date": "01.01.2014",
+        "url": "http://elliotalderson.com/applied-cryptography",
+        "publisher": "O'Reilly Media",
+        "summary": "Cryptography or cryptology is the practice and study of techniques for secure communication in the presence of third parties called adversaries. More generally, cryptography is about constructing and analyzing protocols that prevent third parties or the public from reading private messages;",
+        "highlights": [
+          "Over 100 000 copies sold",
+          "University of Chicago Award for Publishing in Computer Science"
+        ],
+        "keywords": ["Cryptography"]
       }
     ]
   },
 
   "reading": {
-    "summary": "Summary of my reading habbits",
+    "summary": "I like to stay on top of current technologies by reading a lot of books. The most impressive and transformative book that I read this year was Post-Quantum Cryptography, by Daniel J. Bernstein and Johannes Buchmann.",
     "history": [
       {
-        "title": "Title of my first reading entry",
-        "category": "Category of my first reading entry",
-        "url": "Url of my first reading entry",
-        "author": "Author of my first reading entry",
-        "date": "Date of my first reading entry",
-        "summary": "Summary of my first reading entry",
-        "highlights": ["Hightlight 1", "Hightlight 2", "Hightlight 3"],
-        "keywords": ["Keyword 1", "Keyword 2", "Keyword 3"]
-      },
-      {
-        "title": "Title of my second reading entry",
-        "category": "Category of my second reading entry",
-        "url": "Url of my second reading entry",
-        "author": "Author of my second reading entry",
-        "date": "Date of my second reading entry",
-        "summary": "Summary of my second reading entry",
-        "highlights": ["Hightlight 1", "Hightlight 2", "Hightlight 3"],
-        "keywords": ["Keyword 1", "Keyword 2", "Keyword 3"]
+        "title": "Post-Quantum Cryptography",
+        "category": "Book",
+        "url": "https://www.amazon.com/Post-Quantum-Cryptography-Daniel-J-Bernstein/dp/3540887016/ref=sr_1_1?s=books&ie=UTF8&qid=1490352947&sr=1-1&refinements=p_27%3ADaniel+J.+Bernstein",
+        "author": "Daniel J. Bernstein and Johannes Buchmann",
+        "date": "01.01.2009",
+        "summary": "This book is an essential resource for students and researchers who want to contribute to the field of post-quantum cryptography.",
+        "highlights": [
+          "Next generation of cryptographic algorithms,",
+          "The state of the art in quantum computing, hash-based cryptography, code-based cryptography, lattice-based cryptography, and multivariate cryptography"
+        ],
+        "keywords": ["Cryptography", "RSA", "DSA", "ECDSA"]
       }
     ]
   },
 
   "speaking": {
-    "summary": "Summary of my speaking experience",
+    "summary": "This year I gave my first talk at a big conference. I want to do more of them, and I've already been asked and agreed to speak at multiple conferences the following year.",
     "history": [
       {
-        "title": "Title of my first speaking event",
-        "event": "Name of my first speaking event",
-        "location": "Location of my first speaking event",
-        "url": "Url of my first speaking event",
-        "date": "Date of my first speaking event",
-        "summary": "Summary of my first speaking event",
-        "highlights": ["Hightlight 1", "Hightlight 2", "Hightlight 3"],
-        "keywords": ["Keyword 1", "Keyword 2", "Keyword 3"]
-      },
-      {
-        "title": "Title of my second speaking event",
-        "event": "Name of my second speaking event",
-        "location": "Location of my second speaking event",
-        "url": "Url of my second speaking event",
-        "date": "Date of my second speaking event",
-        "summary": "Summary of my second speaking event",
-        "highlights": ["Hightlight 1", "Hightlight 2", "Hightlight 3"],
-        "keywords": ["Keyword 1", "Keyword 2", "Keyword 3"]
+        "title": "Viability and the future of cryptocurrencies",
+        "event": "Real World Cryptography Conference 2017",
+        "location": "Columbia University in New York City",
+        "url": "https://www.realworldcrypto.com/rwc2017/program",
+        "date": "January 6,  2017",
+        "summary": "In this talk I gave a brief overview of the cryptocurrency landscape, arguments for and against its viability, and my opinion about the future.",
+        "highlights": [
+          "Keynote speaker at biggest cryptography conference in the world"
+        ],
+        "keywords": ["cryptocurrency", "F-coin"]
       }
     ]
   },
 
   "patents": {
-    "summary": "Summary of my patents",
+    "summary": "Through my work on F-coin (see projects section), I gained deep insight in cryptocurrency and was able to patent some of my break-throughs.",
     "history": [
       {
-        "title": "Title of my first patent",
-        "url": "Url of my first patent",
-        "number": "Number of my first patent",
-        "status": "Status of my first patent",
-        "description": "Description of my first patent",
-        "date": "Date of my first patent",
-        "highlights": ["Hightlight 1", "Hightlight 2", "Hightlight 3"],
-        "keywords": ["Keyword 1", "Keyword 2", "Keyword 3"]
-      },
-      {
-        "title": "Title of my first patent",
-        "url": "Url of my first patent",
-        "number": "Number of my first patent",
-        "status": "Status of my first patent",
-        "description": "Description of my first patent",
-        "date": "Date of my first patent",
-        "highlights": ["Hightlight 1", "Hightlight 2", "Hightlight 3"],
-        "keywords": ["Keyword 1", "Keyword 2", "Keyword 3"]
+        "title": "Anonymous peer-to-peer verification through cryptographic key-address mapping",
+        "url": "https://patents.google.com/patent/US11111FAKE1234",
+        "number": "US11111FAKE1234",
+        "status": "Issued",
+        "description": "Disclosed is a method for peer-to-peer verification through cryptography key-address mapping, which allows users of a cryptocurrency to verify the authenticity of a transaction without the need to disclose privat information of involved parties.",
+        "date": "01.01.2016",
+        "highlights": [
+          "Key patent for an anonymous cryptocurrency"
+        ],
+        "keywords": ["F-coin", "cryptocurrency"]
       }
     ]
   },
 
   "languages": {
-    "summary": "Summary of my language experience",
+    "summary": "I was born and grew up in the US, so english is my native language. Currently I'm learning basic french on duolingo.",
     "list": [
       {
         "language": "English",
@@ -346,143 +312,106 @@
       {
         "language": "French",
         "level": "Elementary",
-        "years": "2"
+        "years": "1"
       }
     ]
   },
 
   "interests": {
-    "summary": "Summary of my interests",
+    "summary": "",
     "list": [
       {
-        "name": "First Interest",
-        "description": "Description of first interest"
+        "name": "Arduino",
+        "description": "I love to play around with hardware once in a while. I build myself a simple cellphone (on Arduino). Next I want remove the arduino, and custom print my chip design to get the size down."
       },
       {
-        "name": "second Interest",
-        "description": "Description of second interest"
+        "name": "Gaming",
+        "description": "I don't play as often as I used to, but once in a while I still love to loose myself in a great game."
       }
     ]
   },
 
-  "extracurriculars": {
-    "summary": "Summary of my extracurricular involvement",
+  "extracurricular": {
+    "summary": "",
     "history": [
       {
-        "title": "Title of my first extracurricular involvement",
-        "summary": "Summary of my first extracurricular involvement",
-        "category": "Category of my first extracurricular involvement",
-        "location": "Location of my first extracurricular involvement",
-        "url": "http://involvement",
-        "startDate": "Start date of my first extracurricular involvement",
-        "endDate": "End date of my first extracurricular involvement",
-        "highlights": ["Hightlight 1", "Hightlight 2", "Hightlight 3"],
-        "keywords": ["Keyword 1", "Keyword 2", "Keyword 3"]
-      },
-      {
-        "title": "Title of my second extracurricular involvement",
-        "summary": "Summary of my second extracurricular involvement",
-        "category": "Category of my second extracurricular involvement",
-        "url": "http://involvement",
-        "location": "Location of my second extracurricular involvement",
-        "startDate": "Start date of my second extracurricular involvement",
-        "endDate": "End date of my second extracurricular involvement",
-        "highlights": ["Hightlight 1", "Hightlight 2", "Hightlight 3"],
-        "keywords": ["Keyword 1", "Keyword 2", "Keyword 3"]
+        "title": "BitcoinNYC",
+        "url": "https://www.meetup.com/BitcoinNYC/",
+        "summary": "BitcoinNYC is New York's Bitcoin professional network.",
+        "category": "Meetup",
+        "location": "NYC",
+        "startDate": "01.01.2016",
+        "endDate": "Present",
+        "highlights": [
+          "Great way to meet like minded people and learn from the best out there."
+        ],
+        "keywords": ["cryptocurrency", "Bitcoin"]
       }
     ]
   },
 
-  "affiliations": {
-    "summary": "Summary of my affiliation",
+  "affiliation": {
+    "summary": "I'm a member of a few non-profit organizations related to internet privacy, I'm most involved with the EFF, though.",
     "history": [
       {
-        "category": "Category of my first affiliation",
-        "organization": "organization of my first affiliation",
-        "roles": ["Role 1", "Role 2"],
-        "url": "Url of my first affiliation",
-        "startDate": "Start date of my first affiliation",
-        "endDate": "End date of my first affiliation",
-        "summary": "Summary of my first affiliation",
-        "location": "Location of my first affiliation",
-        "highlights": ["Hightlight 1", "Hightlight 2", "Hightlight 3"],
-        "keywords": ["Keyword 1", "Keyword 2", "Keyword 3"]
-      },
-      {
-        "category": "Category of my second affiliation",
-        "organization": "organization of my second affiliation",
-        "roles": ["Role 1", "Role 2"],
-        "url": "Url of my second affiliation",
-        "startDate": "Start date of my second affiliation",
-        "endDate": "End date of my second affiliation",
-        "summary": "Summary of my second affiliation",
-        "location": "Location of my second affiliation",
-        "highlights": ["Hightlight 1", "Hightlight 2", "Hightlight 3"],
-        "keywords": ["Keyword 1", "Keyword 2", "Keyword 3"]
+        "category": "Non-Profit Organization",
+        "organization": "EFF",
+        "roles": ["Member"],
+        "url": "https://www.eff.org/about",
+        "startDate": "01.01.2015",
+        "endDate": "Present",
+        "summary": "The Electronic Frontier Foundation is the leading nonprofit organization",
+        "location": "815 Eddy Street, San Francisco CA 94109 USA",
+        "highlights": [
+          "EFF champions user privacy, free expression, and innovation through impact litigation, policy analysis, grassroots activism, and technology development",
+          "unique expertise of leading technologists, activists, and attorneys in our efforts to defend free speech online, fight illegal surveillance, advocate for users and innovators, and support freedom"
+        ],
+        "keywords": ["free speach", "privacy"]
       }
     ]
   },
 
   "governance": {
-    "summary": "Summary of my governance experience",
+    "summary": "I'm a technology advisor to several non-profit organizations, I am most proud about the work with tor browser.",
     "history": [
       {
-        "summary": "Summary of my first governance experience",
-        "category": "Category of my first governance experience",
-        "roles": ["Role 1", "Role 2"],
-        "organization": "Organization of my first governance experience",
-        "url": "http://Organization",
-        "startDate": "Start date of my first governance experience",
-        "endDate": "End date of my first governance experience",
-        "keywords": ["Keyword 1", "Keyword 2", "Keyword 3"],
-        "highlights": ["Hightlight 1", "Hightlight 2", "Hightlight 3"]
-      },
-      {
-        "summary": "Summary of my second governance experience",
-        "category": "Category of my second governance experience",
-        "url": "http://experience",
-        "roles": ["Role 1", "Role 2"],
-        "organization": "Organization of my second governance experience",
-        "startDate": "Start date of my second governance experience",
-        "endDate": "End date of my second governance experience",
-        "keywords": ["Keyword 1", "Keyword 2", "Keyword 3"],
-        "highlights": ["Hightlight 1", "Hightlight 2", "Hightlight 3"]
+        "summary": "Protect your privacy. Defend yourself against network surveillance and traffic analysis.",
+        "category": "Non-Profit Organization",
+        "roles": ["Advisor"],
+        "organization": "Tor browser",
+        "url": "https://www.torproject.org/",
+        "startDate": "01.01.2015",
+        "endDate": "Present",
+        "highlights": [
+          "Key advisory role regarding technology, cryptography and encryption"
+        ],
+        "keywords": ["encryption"]
       }
     ]
   },
 
   "service": {
-    "summary": "Summary of my service experience",
+    "summary": "",
     "history": [
       {
-        "category": "Category of my first service experience",
-        "organization": "Organization of my first service experience",
-        "roles": ["Role 1", "Role 2"],
-        "url": "Url of my first service experience",
-        "startDate": "Start date of my first service experience",
-        "endDate": "End date of my first service experience",
-        "summary": "Summary of my first service experience",
-        "location": "Location of my first service experience",
-        "highlights": ["Hightlight 1", "Hightlight 2", "Hightlight 3"],
-        "keywords": ["Keyword 1", "Keyword 2", "Keyword 3"]
-      },
-      {
-        "category": "Category of my second service experience",
-        "organization": "Organization of my second service experience",
-        "roles": ["Role 1", "Role 2"],
-        "url": "Url of my second service experience",
-        "startDate": "Start date of my second service experience",
-        "endDate": "End date of my second service experience",
-        "summary": "Summary of my second service experience",
-        "location": "Location of my second service experience",
-        "highlights": ["Hightlight 1", "Hightlight 2", "Hightlight 3"],
-        "keywords": ["Keyword 1", "Keyword 2", "Keyword 3"]
+        "category": "Non-Profit Organization",
+        "organization": "ACLU",
+        "roles": ["Volunteer"],
+        "url": "https://www.aclu.org/",
+        "startDate": "01.01.2015",
+        "endDate": "Present",
+        "summary": "ACLU's mission is to defend and preserve the individual rights and liberties guaranteed to every person in this country by the Constitution and laws of the United States.",
+        "location": "125 Broad St., 18th floor, New York, NY 10004",
+        "highlights": [
+          "The ACLU engaged in several battles to ensure that government records about individuals were kept private, and to give individuals the right to review their records"
+        ],
+        "keywords": ["Privacy", "Free Speach"]
       }
     ]
   },
 
   "references": {
-    "summary": "Summary of my references",
+    "summary": "",
     "history": [
       {
         "name": "Angela Moss",
@@ -500,10 +429,10 @@
   },
 
   "disposition": {
-    "summary": "Summary of my work disposition",    
+    "summary": "I'm looking for consulting work as a full time contractor for companies based in NYC or companies that allow remote work.",    
     "travel": 20,
     "authorization": "Visa for USA",
-    "commitment": ["Full time work"],
+    "commitment": ["Contracting", "Full-time"],
     "remote": true,
     "relocation": {
       "willing": true,
