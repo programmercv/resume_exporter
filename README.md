@@ -12,4 +12,4 @@ RésuméExporter
 [![Gem](https://img.shields.io/gem/v/resume_exporter.svg?style=flat)](https://rubygems.org/gems/resume_exporter)
 [![Travis](https://img.shields.io/travis/programmercv/resume_exporter.svg)](https://travis-ci.org/programmercv/resume_exporter)
 
-More infos at [programmercv.com/resume-exporter](https://programmercv.com/resume-exporter)
+More infos at [programmercv.com/resume_exporter](https://programmercv.com/resume_exporter)
