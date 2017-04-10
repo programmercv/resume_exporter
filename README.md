@@ -3,7 +3,7 @@
 </h3>
 
 ## TL;TR
-RésuméExporter is a tool to export résumé data from different sources (LinkedIn, Xing, Stackoverflow) to json, xml, md, yaml, doc, pdf, html.
+RésuméExporter is a tool to export résumé data from different sources (LinkedIn, Xing, Stackoverflow) to json, xml, md, yaml, pdf, html.
 
 RésuméExporter
 ============
