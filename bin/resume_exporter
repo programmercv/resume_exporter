@@ -1,3 +1,5 @@
+#! ruby
+
 require 'rubygems'
 require 'commander/import'
 require 'resume_exporter'
@@ -40,7 +42,7 @@ command :export do |c|
 
     r = ResumeExporter.new(file)
 
-    say r.export(format: options.format)
+    puts r.export(format: options.format)
   end
 end
 
