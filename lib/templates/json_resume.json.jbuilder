@@ -31,7 +31,7 @@ json.work @data.dig("employment") do |job|
   json.highlights job["highlights"]
 end
 
-json.volunteer @data.dig("service").select{|s| s["category"].downcase.include?("volunteer") } do |volunteer|
+json.volunteer @data.dig("service").select{|s| s["category"].downcase.include?("volunteer") if s["category"] } do |volunteer|
   json.organization volunteer["organization"]
   json.position volunteer["position"]
   json.url volunteer["url"]
@@ -51,7 +51,7 @@ json.education @data.dig("education") do |education|
   json.courses education["curriculum"]
 end
 
-json.awards @data.dig("recognition").select{|a| a["category"].downcase.include?("award") } do |award|
+json.awards @data.dig("recognition").select{|a| a["category"].downcase.include?("award") if a["category"] } do |award|
   json.title award["title"]
   json.date award["startDate"]
   json.awarder award["from"]

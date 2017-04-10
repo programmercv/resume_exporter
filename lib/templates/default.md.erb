@@ -9,16 +9,21 @@ Email:  <%= @data.dig("basics", "contact", "email") %>
 Phone: <%= @data.dig("basics", "contact", "phone") %>  
 Website: <%= @data.dig("basics", "contact", "website") %>  
 Address: <%= @data.dig("basics", "contact", "location") %>  
+
+<% if @data.dig("basics", "contact", "social") %>
 <% for social in @data.dig("basics", "contact", "social") %>
 <%= social["network"] %>: [<%= social["user"] %>](<%= social["url"] %>)  
 <% end %>
+<% end %>
 
 
+<% if @data.dig("basics", "disposition") %> 
 # Disposition
 
-<%= @data.dig("employment", "disposition") %>  
+<%= @data.dig("basics", "disposition") %>  
+<% end %>
 
-
+<% if @data.dig("employment") %>
 # Work Experience
 
 <% for job in @data.dig("employment") %>
@@ -28,11 +33,13 @@ Address: <%= @data.dig("basics", "contact", "location") %>
 <%= job["location"]  %>  
 
 <%= job["summary"]  %>  
-
+<% if job["keywords"] %>
 <%= job["keywords"].join(", ") %>  
-
+<% end %>
+<% end %>
 <% end %>
 
+<% if @data.dig("education") %>
 # Education
 
 <% for entry in @data.dig("education") %>
@@ -42,12 +49,14 @@ Address: <%= @data.dig("basics", "contact", "location") %>
 <%= entry["location"] %>  
 
 <%= entry["summary"] %>  
-
+<% if entry["keywords"] %>
 <%= entry["keywords"].join(", ") %>  
-
+<% end %>
+<% end %>
 <% end %>
 
 
+<% if @data.dig("projects") %>
 # Projects
 
 <% for project in @data.dig("projects") %>
@@ -56,40 +65,45 @@ Address: <%= @data.dig("basics", "contact", "location") %>
 <%= project["category"] %>, [<%= project["repo"] %>](<%= project["repo"] %>) | <%= project["startDate"] %> - <%= project["endDate"] %>  
 
 <%= project["summary"] %>  
-
+<% if project["keywords"] %>
 <%= project["keywords"].join(", ") %>  
-
+<% end %>
+<% end %>
 <% end %>
 
 
 
+<% if @data.dig("openSource") %>
 # Open Source
 
-<%= @data.dig("openSource", "summary") %>  
-
-
+<% for project in @data.dig("openSource") %>
 [<%= project["title"] %>](<%= project["url"] %>)  
 
 <%= project["category"] %>, [<%= project["repo"] %>](<%= project["repo"] %>) | <%= project["startDate"] %> - <%= project["endDate"] %>  
 
 <%= project["summary"] %>  
-
+<% if project["keywords"] %>
 <%= project["keywords"].join(", ") %>  
-
+<% end %>
+<% end %>
 <% end %>
 
 
+<% if @data.dig("skills") %>
 # Skills
 
 <% for skill in @data.dig("skills") %>
 <%= skill["name"] %>  
-<%= skill["summary"] %>  
+<%= skill["summary"] %>
+<% if skill["keywords"] %>  
 <%= skill["keywords"].join(", ") %>  
-
+<% end %>
+<% end %>
 <% end %>
 
 
 
+<% if @data.dig("qualifications") %>
 # Qualifications
 
 <% for qualification in @data.dig("qualifications") %>
@@ -98,12 +112,14 @@ Address: <%= @data.dig("basics", "contact", "location") %>
 <%= qualification["category"] %>, <%= qualification["from"] %> | <%= qualification["startDate"] %> - <%= qualification["endDate"] %>  
 
 <%= qualification["summary"] %>  
-
+<% if qualification["keywords"] %>
 <%= qualification["keywords"].join(", ") %>  
-
+<% end %>
+<% end %>
 <% end %>
 
 
+<% if @data.dig("recognition") %>
 # Recognition
 
 <% for entry in @data.dig("recognition") %>
@@ -112,12 +128,14 @@ Address: <%= @data.dig("basics", "contact", "location") %>
 <%= entry["category"] %>, <%= entry["from"] %> | <%= entry["startDate"] %> - <%= entry["endDate"] %>  
 
 <%= entry["summary"] %>  
-
+<% if entry["keywords"] %>
 <%= entry["keywords"].join(", ") %>  
-
+<% end %>
+<% end %>
 <% end %>
 
 
+<% if @data.dig("writing") %>
 # Writing
 
 <% for entry in @data.dig("writing") %>
@@ -126,12 +144,14 @@ Address: <%= @data.dig("basics", "contact", "location") %>
 <%= entry["category"] %>, <%= entry["publisher"] %> | <%= entry["date"] %>  
 
 <%= entry["summary"] %>  
-
+<% if entry["keywords"] %>
 <%= entry["keywords"].join(", ") %>  
-
+<% end %>
+<% end %>
 <% end %>
 
 
+<% if @data.dig("reading") %>
 # Reading
 
 <% for entry in @data.dig("reading") %>
@@ -140,12 +160,14 @@ Address: <%= @data.dig("basics", "contact", "location") %>
 <%= entry["category"] %>, <%= entry["author"] %> | <%= entry["date"] %>  
 
 <%= entry["summary"] %>  
-
+<% if entry["keywords"] %>
 <%= entry["keywords"].join(", ") %>  
-
+<% end %>
+<% end %>
 <% end %>
 
 
+<% if @data.dig("speaking") %>
 # Speaking
 
 <% for entry in @data.dig("speaking") %>
@@ -154,12 +176,14 @@ Address: <%= @data.dig("basics", "contact", "location") %>
 <%= entry["event"] %>, <%= entry["location"] %> | <%= entry["date"] %>  
 
 <%= entry["summary"] %>  
-
+<% if entry["keywords"] %>
 <%= entry["keywords"].join(", ") %>  
-
+<% end %>
+<% end %>
 <% end %>
 
 
+<% if @data.dig("patents") %>
 # Patents
 
 <% for patent in @data.dig("patents") %>
@@ -168,19 +192,23 @@ Address: <%= @data.dig("basics", "contact", "location") %>
 <%= patent["number"] %>, <%= patent["status"] %> | <%= patent["date"] %>  
 
 <%= patent["summary"] %>  
-
+<% if patent["keywords"] %>
 <%= patent["keywords"].join(", ") %>  
-
+<% end %>
+<% end %>
 <% end %>
 
 
+<% if @data.dig("languages") %>
 # Languages
 
 <% for language in @data.dig("languages") %>
 - <%= language["language"] %>, <%= language["level"] %> (<%= language["years"] %> years)  
 <% end %>
+<% end %>
 
 
+<% if @data.dig("interests") %>
 # Interest
 
 <% for interest in @data.dig("interests") %>
@@ -188,38 +216,44 @@ Address: <%= @data.dig("basics", "contact", "location") %>
 <%= interest["summary"] %>  
 
 <% end %>
+<% end %>
 
 
+<% if @data.dig("extracurricular") %>
 # Extracurricular
 
-<% for entry in @data.dig("extracurriculars") %>
+<% for entry in @data.dig("extracurricular") %>
 
 ## [<%= entry["title"] %>](<%= entry["url"] %>)
 
 <%= entry["category"] %>, <%= entry["location"] %> | <%= entry["startDate"] %> - <%= entry["endDate"] %>  
 
 <%= entry["summary"] %>  
-
+<% if entry["keywords"] %>
 <%= entry["keywords"].join(", ") %>  
-
+<% end %>
+<% end %>
 <% end %>
 
 
+<% if @data.dig("affiliation") %>
 # Affiliation
 
-<% for entry in @data.dig("affiliations") %>
+<% for entry in @data.dig("affiliation") %>
 
 ## [<%= entry["organization"] %>](<%= entry["url"] %>)
 
 <%= entry["category"] %>, <%= entry["location"] %> | <%= entry["startDate"] %> - <%= entry["endDate"] %>  
 
 <%= entry["summary"] %>  
-
+<% if entry["keywords"] %>
 <%= entry["keywords"].join(", ") %>  
-
+<% end %>
+<% end %>
 <% end %>
 
 
+<% if @data.dig("governance") %>
 # Governance
 
 <% for entry in @data.dig("governance") %>
@@ -229,12 +263,14 @@ Address: <%= @data.dig("basics", "contact", "location") %>
 <%= entry["summary"] %>  
 
 <%= entry["category"] %> | <%= entry["startDate"] %> - <%= entry["endDate"] %>  
-
+<% if entry["keywords"] %>
 <%= entry["keywords"].join(", ") %>  
-
+<% end %>
+<% end %>
 <% end %>
 
 
+<% if @data.dig("service") %>
 # Service
 
 <% for entry in @data.dig("service") %>
@@ -244,12 +280,14 @@ Address: <%= @data.dig("basics", "contact", "location") %>
 <%= entry["category"] %>, <%= entry["location"] %> | <%= entry["startDate"] %> - <%= entry["endDate"] %>  
 
 <%= entry["summary"] %>  
-
+<% if entry["keywords"] %>
 <%= entry["keywords"].join(", ") %>  
-
+<% end %>
+<% end %>
 <% end %>
 
 
+<% if @data.dig("references") %>
 # References
 
 <% for reference in @data.dig("references") %>
@@ -259,4 +297,5 @@ Address: <%= @data.dig("basics", "contact", "location") %>
 
 <%= reference["summary"] %>  
 
+<% end %>
 <% end %>

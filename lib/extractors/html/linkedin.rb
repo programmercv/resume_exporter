@@ -201,7 +201,7 @@ module Extractor
       end
     end
 
-    def affiliations
+    def affiliation
       @doc.css('#organizations li').map do |item|
         organization = {}
         organization["organization"] = item.at_css(".item-title").text if item.at_css(".item-title")

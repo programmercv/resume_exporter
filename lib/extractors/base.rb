@@ -17,8 +17,8 @@ module Extractor
         patents
         languages
         interests
-        extracurriculars
-        affiliations
+        extracurricular
+        affiliation
         governance
         service
         references

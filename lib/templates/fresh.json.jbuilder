@@ -70,13 +70,11 @@ json.projects @data.dig("projects") do |project|
 end
 
 json.skills do
-  json.sets @data.dig("skills", "sets") do |skill|
+  json.sets @data.dig("skills") do |skill|
     json.name skill["name"]
     json.level skill["level"]
     json.skills skill["keywords"]
   end
-
-  json.list @data.dig("skills", "list")
 end
 
 json.service do
@@ -187,7 +185,7 @@ json.interests @data.dig("interests") do |interest|
   json.keywords interest["keywords"]
 end
 
-json.extracurricular @data.dig("extracurriculars") do |entry|
+json.extracurricular @data.dig("extracurricular") do |entry|
   json.title entry["title"]
   json.activity entry["summary"]
   json.location entry["location"]
@@ -196,7 +194,7 @@ json.extracurricular @data.dig("extracurriculars") do |entry|
 end
 
 json.affiliation do
-  json.history @data.dig("affiliations") do |entry|
+  json.history @data.dig("affiliation") do |entry|
     json.category entry["category"]
     json.organization entry["organization"]
     json.role entry["roles"].join(", ") if entry["roles"]

@@ -111,7 +111,7 @@ describe Extractor::Xing do
       end
     end
 
-    describe ".affiliations" do
+    describe ".affiliation" do
       let(:result) do
         [
           {
@@ -120,8 +120,8 @@ describe Extractor::Xing do
         ]
       end
 
-      it "should extract affiliations data" do
-        expect(subject.affiliations).to eq result
+      it "should extract affiliation data" do
+        expect(subject.affiliation).to eq result
       end
     end
 

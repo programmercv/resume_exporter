@@ -4,7 +4,7 @@ require 'builder'
 module Exporter
   module Xml
     def self.export(options = {})
-      template = options[:template] || "prtflio"
+      template = options[:template] || "default"
       @data = options[:data]
       Tilt.new(File.expand_path("../templates/#{template}.xml.builder", __dir__)).render(self)
     end

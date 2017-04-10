@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    resume_exporter (1.0.0)
+    resume_exporter (1.1.0)
       builder (~> 3.2)
       caracal (~> 1.0)
       commander (~> 4.4)

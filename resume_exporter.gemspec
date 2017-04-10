@@ -1,6 +1,6 @@
 Gem::Specification.new do |gem|
   gem.name        = 'resume_exporter'
-  gem.version     = '1.0.0'
+  gem.version     = '1.1.0'
   gem.date        = '2017-03-28'
   gem.summary     = "A tool to export résumé data from different sources (LinkedIn, Xing, Stackoverflow)"
   gem.description = "It extracts résumé data from public profile html files and exports to json, xml, yml, md, txt, html, pdf"

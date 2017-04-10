@@ -76,7 +76,7 @@ module Extractor
       end
     end
 
-    def affiliations
+    def affiliation
       @doc.css('#organizations li .title').map do |item|
         { "organization" => item.text.gsub(/\s+/, ' ').strip }
       end

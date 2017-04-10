@@ -64,12 +64,12 @@ module Extractor
       @doc.dig("interests")
     end
 
-    def extracurriculars
-      @doc.dig("extracurriculars")
+    def extracurricular
+      @doc.dig("extracurricular")
     end
 
-    def affiliations
-      @doc.dig("affiliations")
+    def affiliation
+      @doc.dig("affiliation")
     end
 
     def governance

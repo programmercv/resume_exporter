@@ -175,7 +175,7 @@ module Extractor
       end
     end
 
-    def extracurriculars
+    def extracurricular
       @doc.dig("extracurricular").map do |extracurricular|
         {
           "title" => extracurricular["title"],
@@ -187,7 +187,7 @@ module Extractor
       end
     end
 
-    def affiliations
+    def affiliation
       @doc.dig("affiliation", "history").map do |affiliation|
         {
           "category" => affiliation["category"],
