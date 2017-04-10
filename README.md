@@ -1,5 +1,5 @@
 <h3 align="center">
-  <img src="resume_exporter.png" alt="ResumeExporter Logo" />
+  <img src="logo.png" alt="ResumeExporter Logo" />
 </h3>
 
 ## TL;TR
