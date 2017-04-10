@@ -1,4 +1,4 @@
-# encoding: UTF-8
+# "encoding" => UTF-8
 require 'spec_helper'
 
 describe Extractor::Xing do
@@ -9,8 +9,8 @@ describe Extractor::Xing do
     describe ".basics" do
       let(:result) do
         {
-          :name=>"John Doe",
-          :image=>"profile.jpg"
+          "name"=>"John Doe",
+          "image"=>"profile.jpg"
         }
       end
 
@@ -21,17 +21,15 @@ describe Extractor::Xing do
 
     describe ".employment" do
       let(:result) do
-        {
-          :history => [
-            {
-              :position=>"Software Developer",
-              :employer=>"Company Name",
-              :url=>"http://url.com",
-              :startDate=>"09/2014",
-              :endDate=>"10/2016"
-            }
-          ]
-        }
+        [
+          {
+            "position"=>"Software Developer",
+            "employer"=>"Company Name",
+            "url"=>"http://url.com",
+            "startDate"=>"09/2014",
+            "endDate"=>"10/2016"
+          }
+        ]
       end
 
       it "should extract employment data" do
@@ -41,17 +39,15 @@ describe Extractor::Xing do
 
     describe ".education" do
       let(:result) do
-        {
-          :history => [
-            {
-              :institution=>"Institution",
-              :fieldOfStudy=>"Fieldofstuy, degree",
-              :summary=>"Description",
-              :startDate=>"03/2015",
-              :endDate=>"05/2019"
-            }
-          ],
-        }
+        [
+          {
+            "institution"=>"Institution",
+            "fieldOfStudy"=>"Fieldofstuy, degree",
+            "summary"=>"Description",
+            "startDate"=>"03/2015",
+            "endDate"=>"05/2019"
+          }
+        ]
       end
 
       it "should extract education data" do
@@ -61,22 +57,20 @@ describe Extractor::Xing do
 
     describe ".languages" do
       let(:result) do
-        {
-          list: [
-            {
-              language: "Deutsch",
-              level: "Muttersprache"
-            },
-            { 
-              language: "Englisch",
-              level: "Fließend"
-            },
-            { 
-              language: "Französisch",
-              level: "Grundkenntnisse"
-            }
-          ]
-        }
+        [
+          {
+            "language" => "Deutsch",
+            "level" => "Muttersprache"
+          },
+          { 
+            "language" => "Englisch",
+            "level" => "Fließend"
+          },
+          { 
+            "language" => "Französisch",
+            "level" => "Grundkenntnisse"
+          }
+        ]
       end
 
       it "should extract languages data" do
@@ -86,16 +80,14 @@ describe Extractor::Xing do
 
     describe ".qualifications" do
       let(:result) do
-        {
-          history: [
-            {
-              title: "Qualification 1"
-            },
-            {
-              title: "Qualification 2"
-            } 
-          ]
-        }
+        [
+          {
+            "title" => "Qualification 1"
+          },
+          {
+            "title" => "Qualification 2"
+          } 
+        ]        
       end
 
       it "should extract qualifications data" do
@@ -105,15 +97,13 @@ describe Extractor::Xing do
 
     describe ".recognition" do
       let(:result) do
-        {
-          history: [
-            {
-              title: "Test",
-              url: "http://link.de",
-              startDate: "2013"
-            }
-          ]
-        }
+        [
+          {
+            "title" => "Test",
+            "url" => "http://link.de",
+            "startDate" => "2013"
+          }
+        ]
       end
 
       it "should extract recognition data" do
@@ -123,13 +113,11 @@ describe Extractor::Xing do
 
     describe ".affiliations" do
       let(:result) do
-        {
-          history: [
-            {
-              organization: "test"
-            }
-          ]
-        }
+        [
+          {
+            "organization" => "test"
+          }
+        ]
       end
 
       it "should extract affiliations data" do
@@ -139,13 +127,11 @@ describe Extractor::Xing do
 
     describe ".interests" do
       let(:result) do
-        {
-          list: [
-            {
-              name: "Test"
-            }
-          ]
-        }
+        [
+          {
+            "name" => "Test"
+          }
+        ]
       end
 
       it "should extract interests data" do

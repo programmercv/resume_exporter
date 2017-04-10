@@ -20,7 +20,7 @@ module Extractor
       end
 
       attributes.reduce({}) do |hash, attr|
-        hash[attr.to_sym] = extractor.send(attr.to_sym) if extractor.respond_to?(attr.to_sym)
+        hash[attr] = extractor.send(attr) if extractor.respond_to?(attr)
         hash
       end
     end

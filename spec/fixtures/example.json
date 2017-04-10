@@ -9,6 +9,7 @@
     "label": "Cybersecurity Engineer",
     "image": "http://40.media.tumblr.com/31d92e5030572f2d0b58ccf0b8931c68/tumblr_o1jnk8J4Bv1uba6jio1_250.jpg",
     "summary": "Highly talented and accomplished IT professional with 10+ years industry experience specializing in cybersecurity. Proven ability to deploy, administrate, maintain and secure IT infrastructures. Also, I'm an imaginary software engineer from the american drama–thriller television series <i>Mr. Robot</i>, created by Sam Esmail.",
+    "disposition": "I'm looking for consulting work as a full time contractor for companies based in NYC or companies that allow remote work.",
     "contact": {
       "email": "elliotalderson@lavabit.com",
       "phone": "0001-0101-1010101111",
@@ -29,414 +30,273 @@
     }
   },
 
-  "employment": {
-    "summary": "10+ years industry experience specializing in cybersecurity",
-    "history": [
-      {
-        "employer": "Allsafe Cybersecurity",
-        "position": "Chief Cybersecurity Engineer",
-        "url": "https://allsafe.com",
-        "startDate": "01-01-2014",
-        "endDate": "01-01-2016",
-        "summary": "At my job with Allsafe Cybersecurity I'm responsible with maintaining and securing client IT infrastructures.",
-        "location": "New York City, USA",
-        "highlights": [
-          "Developed and implemented online security procedures",
-          "Worked with management to set security standards and manuals"
-        ],
-        "keywords": ["IAM", "UNIX", "IPSec", "VPN", "EIGRP"]
-      },
-      {
-        "employer": "BigCorp Inc.",
-        "position": "Cybersecurity Engineer",
-        "url": "https://bigcorp.com",
-        "startDate": "01-01-2012",
-        "endDate": "01-01-2014",
-        "summary": "My responsibility at BigCorp Inc. was to find holes in their system, until it was 'hacker-proof'.",
-        "location": "New York City, USA",
-        "highlights": [
-          "Developed complicated network infrastructure from scratch",
-          "Secured running applications and full network infrastructure"
-        ],
-        "keywords": ["OSPF", "BGP", "SSH", "ModSecurity", "Fail2Ban", "RKHunter", "Nmap"]
-      }
-    ]
-  },
+  "employment": [
+    {
+      "employer": "Allsafe Cybersecurity",
+      "position": "Chief Cybersecurity Engineer",
+      "url": "https://allsafe.com",
+      "startDate": "01-01-2014",
+      "endDate": "01-01-2016",
+      "summary": "At my job with Allsafe Cybersecurity I'm responsible with maintaining and securing client IT infrastructures. <br /><br /><div><h4>Highlights</h4><ul><li>Developed and implemented online security procedures</li><li>Worked with management to set security standards and manuals</li></ul></div>",
+      "location": "New York City, USA",
+      "keywords": ["IAM", "UNIX", "IPSec", "VPN", "EIGRP"]
+    },
+    {
+      "employer": "BigCorp Inc.",
+      "position": "Cybersecurity Engineer",
+      "url": "https://bigcorp.com",
+      "startDate": "01-01-2012",
+      "endDate": "01-01-2014",
+      "summary": "My responsibility at BigCorp Inc. was to find holes in their system, until it was 'hacker-proof'. <br /><br /><div><h4>Highlights</h4><ul><li>Developed complicated network infrastructure from scratch</li><li>Secured running applications and full network infrastructure</li></ul></div>",
+      "location": "New York City, USA",
+      "keywords": ["OSPF", "BGP", "SSH", "ModSecurity", "Fail2Ban", "RKHunter", "Nmap"]
+    }
+  ],
 
-  "education": {
-    "summary": "I received a Bachelor's degree in Computer Sience from Columbia University, New York City. I then specialized with a Master's degree in Computer Security also at CU NY.",
-    "history":[
-      {
-        "institution": "Columbia University",
-        "fieldOfStudy": "Computer Security",
-        "degree": "Master",
-        "startDate": "01-01-2010",
-        "endDate": "01-01-2011",
-        "grade": "4.0 gpa",
-        "url": "http://www.cs.columbia.edu/education/ms/newComputerSecurity/",
-        "location": "New York City, USA",
-        "curriculum": ["Advanced Internet Services", "Advanced Cryptography", "Intrusion and Anomaly Detection Systems"],
-        "highlights": [
-          "Intrusion and Anomaly Detection Systems",
-          "Computer Communication Networks"
-        ],
-        "keywords": ["Computer Security"]
-      },
-      {
-        "institution": "Columbia University",
-        "fieldOfStudy": "Computer Science",
-        "degree": "Bachelor",
-        "startDate": "01-01-2008",
-        "endDate": "01-01-2011",
-        "url": "http://www.cs.columbia.edu/",
-        "location": "New York City, USA",
-        "curriculum": ["Network Security", "Adv. Software Engineering", "Security Architecture and Engineering"],
-        "highlights": [
-          "Advanced Database Systems",
-          "Advanced Machine Learning"
-        ],
-        "keywords": ["Computer Science"]
-      }
-    ]
-  },
+  "education": [
+    {
+      "institution": "Columbia University",
+      "fieldOfStudy": "Computer Security",
+      "degree": "Master",
+      "startDate": "01-01-2010",
+      "endDate": "01-01-2011",
+      "grade": "4.0 gpa",
+      "url": "http://www.cs.columbia.edu/education/ms/newComputerSecurity/",
+      "location": "New York City, USA",
+      "keywords": ["Computer Security"]
+    },
+    {
+      "institution": "Columbia University",
+      "fieldOfStudy": "Computer Science",
+      "degree": "Bachelor",
+      "startDate": "01-01-2008",
+      "endDate": "01-01-2011",
+      "url": "http://www.cs.columbia.edu/",
+      "location": "New York City, USA",
+      "keywords": ["Computer Science"]
+    }
+  ],
 
-  "projects": {
-    "summary": "In my spare time I like to play around with new technologies. I'm always trying to improve my skills as a security expert, and personal projects are a great way to do that.",
-    "history": [
-      {
-        "title": "OpenDoor",
-        "description": "A tool to check a system for open ports and other known security holes",
-        "url": "https://opendoor.org",
-        "repo": "https://github.com/elliotalderson/opendoor",
-        "startDate": "01.01.2014",
-        "endDate": "Present",
-        "category": "Desktop Application",
-        "roles": ["Lead Developer"],
-        "highlights": [
-          "#1 top rated app in iTunes category 'Security Application'",
-          "Over 1.3 million downloads"
-        ],
-        "keywords": ["C++"]
-      }
-    ]
-  },
+  "projects": [
+    {
+      "title": "OpenDoor",
+      "summary": "A tool to check a system for open ports and other known security holes",
+      "url": "https://opendoor.org",
+      "repo": "https://github.com/elliotalderson/opendoor",
+      "category": "Command line application",
+      "startDate": "01.01.2014",
+      "endDate": "Present",
+      "keywords": ["C++"]
+    }
+  ],
 
-  "openSource": {
-    "summary": "I'm also involved in several open-source projects related to online security, privacy and user freedom.",
-    "history": [
-      {
-        "title": "Tor",
-        "description": "Tor is free software and an open network that helps you defend against traffic analysis, a form of network surveillance that threatens personal freedom and privacy, confidential business activities and relationships, and state security.",
-        "url": "https://www.torproject.org/",
-        "repo": "https://gitweb.torproject.org/tor.git",
-        "startDate": "01.01.2010",
-        "endDate": "Present",
-        "category": "Desktop Application",
-        "roles": ["Contributor", "Developer"],
-        "highlights": [
-          "Over 50 of my patches were accepted and merged into the core code base"
-        ],
-        "keywords": ["C"]
-      },
-      {
-        "title": "F-coin",
-        "description": "F-coin is a peer-to-peer cryptocurrency and open source software project released under the MIT/X11 license",
-        "url": "http://fcoin.org",
-        "repo": "http://git.fcoin.org",
-        "startDate": "01.01.2015",
-        "endDate": "Present",
-        "category": "Cryptocurrency",
-        "roles": ["Contributor", "Core Team Member"],
-        "highlights": [
-          "Voted #1 most promising bitcoin alternative by Mashable",
-          "Market cap of $2.4 B"
-        ],
-        "keywords": ["Cryptocurrency", "C++"]
-      }
-    ]
-  },
+  "openSource": [
+    {
+      "title": "Tor",
+      "summary": "Tor is free software and an open network that helps you defend against traffic analysis, a form of network surveillance that threatens personal freedom and privacy, confidential business activities and relationships, and state security.",
+      "url": "https://www.torproject.org/",
+      "category": "Desktop Application",
+      "repo": "https://gitweb.torproject.org/tor.git",
+      "startDate": "01.01.2010",
+      "endDate": "Present",
+      "keywords": ["C"]
+    },
+    {
+      "title": "F-coin",
+      "summary": "F-coin is a peer-to-peer cryptocurrency and open source software project released under the MIT/X11 license",
+      "url": "http://fcoin.org",
+      "category": "Cryptocurrency",
+      "repo": "http://git.fcoin.org",
+      "startDate": "01.01.2015",
+      "endDate": "Present",
+      "keywords": ["Cryptocurrency", "C++"]
+    }
+  ],
 
-  "skills": {
-    "summary": "I have been programming for over 20 years, 10 of those professionaly as an employed software engineer. In the last 5 years of my career I have specialized in cyber security.",
-    "sets": [
-      {
-        "name": "Computer Security",
-        "description": "Although to completely secure a system you have to know every layer of the stack, there are some common tools that I use on a regular basis.",
-        "keywords": ["OSPF", "BGP", "SSH", "ModSecurity", "Fail2Ban", "RKHunter", "Nmap", "IAM", "UNIX", "IPSec", "VPN", "EIGRP"]
-      },
-      {
-        "name": "Programming",
-        "description": "I use the tool which is right for the job, and I am certain I can pick up any programming language that is necessary to get the task done.",
-        "keywords": ["C", "C++", "Java", "PHP"]
-      }
-    ]
-  },
+  "skills": [
+    {
+      "name": "Computer Security",
+      "summary": "Although to completely secure a system you have to know every layer of the stack, there are some common tools that I use on a regular basis.",
+      "keywords": ["OSPF", "BGP", "SSH", "ModSecurity", "Fail2Ban", "RKHunter", "Nmap", "IAM", "UNIX", "IPSec", "VPN", "EIGRP"]
+    },
+    {
+      "name": "Programming",
+      "summary": "I use the tool which is right for the job, and I am certain I can pick up any programming language that is necessary to get the task done.",
+      "keywords": ["C", "C++", "Java", "PHP"]
+    }
+  ],
 
-  "qualifications": {
-    "summary": "Additionally to my bachelor and master degree I try to keep up with current technology, by taking part in online courses and getting certified by third party vendors.",
-    "history": [
-      {
-        "category": "Course",
-        "title": "Cybersecurity Specialization",
-        "startDate": "01.01.2015",
-        "endDate": "End date of first qualification",
-        "from": "University of Maryland",
-        "summary": "The Cybersecurity Specialization covers the fundamental concepts underlying the construction of secure systems, from the hardware to the software to the human-computer interface, with the use of cryptography to secure interactions.",
-        "url": "https://www.coursera.org/specializations/cyber-security#courses",
-        "highlights": [
-          "Learned foundations of modern cryptography, with an eye toward practical applications.",
-          "Applied security and trust from the hardware perspective",
-          "Understand the vulnerabilities in current digital system design flow and the physical attacks to these systems"
-        ],
-        "keywords": ["Cryptography", "Hardware Security", "Software Security"]
-      },
-      {
-        "category": "Certification",
-        "title": "ITIL® Master Qualification (ITILMA)",
-        "startDate": "01.01.2012",
-        "endDate": "Present",
-        "from": "Exin",
-        "summary": "The ITIL Master Qualification Certificate validates the capability of the candidate to apply the principles, methods and techniques from ITIL in the workplace.",
-        "url": "https://www.exin.com/NL/en/certifications/&fw=itil-v3",
-        "highlights": [
-          "The ITIL Master Qualification is the highest level in the Official ITIL Qualification Scheme",
-          "The ITIL Master builds upon the knowledge gained through the core qualification scheme and validates practical application of the ITIL framework in the work place."
-        ],
-        "keywords": ["Problem Management", "IS Governance", "Risk Management"]
-      }
-    ]
-  },
+  "qualifications": [
+    {
+      "category": "Course",
+      "title": "Cybersecurity Specialization",
+      "startDate": "01.01.2015",
+      "endDate": "",
+      "from": "University of Maryland",
+      "summary": "The Cybersecurity Specialization covers the fundamental concepts underlying the construction of secure systems, from the hardware to the software to the human-computer interface, with the use of cryptography to secure interactions.",
+      "url": "https://www.coursera.org/specializations/cyber-security#courses",
+      "keywords": ["Cryptography", "Hardware Security", "Software Security"]
+    },
+    {
+      "category": "Certification",
+      "title": "ITIL® Master Qualification (ITILMA)",
+      "startDate": "01.01.2012",
+      "endDate": "",
+      "from": "Exin",
+      "summary": "The ITIL Master Qualification Certificate validates the capability of the candidate to apply the principles, methods and techniques from ITIL in the workplace.",
+      "url": "https://www.exin.com/NL/en/certifications/&fw=itil-v3",
+      "keywords": ["Problem Management", "IS Governance", "Risk Management"]
+    }
+  ],
 
-  "recognition": {
-    "summary": "",
-    "history": [
-      {
-        "category": "Award",
-        "title": "Google Summer of Code",
-        "startDate": "01.01.2012",
-        "endDate": "",
-        "from": "Google",
-        "summary": "Google Summer of Code is a global program that offers post-secondary student developers stipends to write code for various open source software projects. ",
-        "url": "https://en.wikipedia.org/wiki/Google_Summer_of_Code",
-        "highlights": [
-          "Paired with a mentor from participating projects, exposing them to real-world software development",
-          "Great opportunity to work on a large, and extremely popular open source project"
-        ],
-        "keywords": ["Java"]
-      }
-    ]
-  },
+  "recognition": [
+    {
+      "category": "Award",
+      "title": "Google Summer of Code",
+      "startDate": "01.01.2012",
+      "endDate": "",
+      "from": "Google",
+      "summary": "Google Summer of Code is a global program that offers post-secondary student developers stipends to write code for various open source software projects. ",
+      "url": "https://en.wikipedia.org/wiki/Google_Summer_of_Code",
+      "keywords": ["Java"]
+    }
+  ],
 
-  "writing": {
-    "summary": "After extensive studying and exploring current technologies in the cryptography field, I summarized my findings in my first book 'Applied Cryptography'",
-    "history": [
-      {
-        "title": "Applied Cryptography",
-        "category": "Book",
-        "date": "01.01.2014",
-        "url": "http://elliotalderson.com/applied-cryptography",
-        "publisher": "O'Reilly Media",
-        "summary": "Cryptography or cryptology is the practice and study of techniques for secure communication in the presence of third parties called adversaries. More generally, cryptography is about constructing and analyzing protocols that prevent third parties or the public from reading private messages;",
-        "highlights": [
-          "Over 100 000 copies sold",
-          "University of Chicago Award for Publishing in Computer Science"
-        ],
-        "keywords": ["Cryptography"]
-      }
-    ]
-  },
+  "writing": [
+    {
+      "title": "Applied Cryptography",
+      "category": "Book",
+      "date": "01.01.2014",
+      "url": "http://elliotalderson.com/applied-cryptography",
+      "publisher": "O'Reilly Media",
+      "summary": "Cryptography or cryptology is the practice and study of techniques for secure communication in the presence of third parties called adversaries. More generally, cryptography is about constructing and analyzing protocols that prevent third parties or the public from reading private messages;",
+      "keywords": ["Cryptography"]
+    }
+  ],
 
-  "reading": {
-    "summary": "I like to stay on top of current technologies by reading a lot of books. The most impressive and transformative book that I read this year was Post-Quantum Cryptography, by Daniel J. Bernstein and Johannes Buchmann.",
-    "history": [
-      {
-        "title": "Post-Quantum Cryptography",
-        "category": "Book",
-        "url": "https://www.amazon.com/Post-Quantum-Cryptography-Daniel-J-Bernstein/dp/3540887016/ref=sr_1_1?s=books&ie=UTF8&qid=1490352947&sr=1-1&refinements=p_27%3ADaniel+J.+Bernstein",
-        "author": "Daniel J. Bernstein and Johannes Buchmann",
-        "date": "01.01.2009",
-        "summary": "This book is an essential resource for students and researchers who want to contribute to the field of post-quantum cryptography.",
-        "highlights": [
-          "Next generation of cryptographic algorithms,",
-          "The state of the art in quantum computing, hash-based cryptography, code-based cryptography, lattice-based cryptography, and multivariate cryptography"
-        ],
-        "keywords": ["Cryptography", "RSA", "DSA", "ECDSA"]
-      }
-    ]
-  },
+  "reading": [
+    {
+      "title": "Post-Quantum Cryptography",
+      "category": "Book",
+      "url": "https://www.amazon.com/Post-Quantum-Cryptography-Daniel-J-Bernstein/dp/3540887016/ref=sr_1_1?s=books&ie=UTF8&qid=1490352947&sr=1-1&refinements=p_27%3ADaniel+J.+Bernstein",
+      "author": "Daniel J. Bernstein and Johannes Buchmann",
+      "date": "01.01.2009",
+      "summary": "This book is an essential resource for students and researchers who want to contribute to the field of post-quantum cryptography.",
+      "keywords": ["Cryptography", "RSA", "DSA", "ECDSA"]
+    }
+  ],
 
-  "speaking": {
-    "summary": "This year I gave my first talk at a big conference. I want to do more of them, and I've already been asked and agreed to speak at multiple conferences the following year.",
-    "history": [
-      {
-        "title": "Viability and the future of cryptocurrencies",
-        "event": "Real World Cryptography Conference 2017",
-        "location": "Columbia University in New York City",
-        "url": "https://www.realworldcrypto.com/rwc2017/program",
-        "date": "January 6,  2017",
-        "summary": "In this talk I gave a brief overview of the cryptocurrency landscape, arguments for and against its viability, and my opinion about the future.",
-        "highlights": [
-          "Keynote speaker at biggest cryptography conference in the world"
-        ],
-        "keywords": ["cryptocurrency", "F-coin"]
-      }
-    ]
-  },
+  "speaking": [
+    {
+      "title": "Viability and the future of cryptocurrencies",
+      "event": "Real World Cryptography Conference 2017",
+      "location": "Columbia University in New York City",
+      "url": "https://www.realworldcrypto.com/rwc2017/program",
+      "date": "January 6,  2017",
+      "summary": "In this talk I gave a brief overview of the cryptocurrency landscape, arguments for and against its viability, and my opinion about the future.",
+      "keywords": ["cryptocurrency", "F-coin"]
+    }
+  ],
 
-  "patents": {
-    "summary": "Through my work on F-coin (see projects section), I gained deep insight in cryptocurrency and was able to patent some of my break-throughs.",
-    "history": [
-      {
-        "title": "Anonymous peer-to-peer verification through cryptographic key-address mapping",
-        "url": "https://patents.google.com/patent/US11111FAKE1234",
-        "number": "US11111FAKE1234",
-        "status": "Issued",
-        "description": "Disclosed is a method for peer-to-peer verification through cryptography key-address mapping, which allows users of a cryptocurrency to verify the authenticity of a transaction without the need to disclose privat information of involved parties.",
-        "date": "01.01.2016",
-        "highlights": [
-          "Key patent for an anonymous cryptocurrency"
-        ],
-        "keywords": ["F-coin", "cryptocurrency"]
-      }
-    ]
-  },
+  "patents": [
+    {
+      "title": "Anonymous peer-to-peer verification through cryptographic key-address mapping",
+      "url": "https://patents.google.com/patent/US11111FAKE1234",
+      "number": "US11111FAKE1234",
+      "status": "Issued",
+      "summary": "Disclosed is a method for peer-to-peer verification through cryptography key-address mapping, which allows users of a cryptocurrency to verify the authenticity of a transaction without the need to disclose privat information of involved parties.",
+      "date": "01.01.2016",
+      "keywords": ["F-coin", "cryptocurrency"]
+    }
+  ],
 
-  "languages": {
-    "summary": "I was born and grew up in the US, so english is my native language. Currently I'm learning basic french on duolingo.",
-    "list": [
-      {
-        "language": "English",
-        "level": "Native",
-        "years": "26"
-      },
-      {
-        "language": "French",
-        "level": "Elementary",
-        "years": "1"
-      }
-    ]
-  },
+  "languages": [
+    {
+      "language": "English",
+      "level": "Native",
+      "years": "26"
+    },
+    {
+      "language": "French",
+      "level": "Elementary",
+      "years": "1"
+    }
+  ],
 
-  "interests": {
-    "summary": "",
-    "list": [
-      {
-        "name": "Arduino",
-        "description": "I love to play around with hardware once in a while. I build myself a simple cellphone (on Arduino). Next I want remove the arduino, and custom print my chip design to get the size down."
-      },
-      {
-        "name": "Gaming",
-        "description": "I don't play as often as I used to, but once in a while I still love to loose myself in a great game."
-      }
-    ]
-  },
+  "interests": [
+    {
+      "name": "Arduino",
+      "summary": "I love to play around with hardware once in a while. I build myself a simple cellphone (on Arduino). Next I want remove the arduino, and custom print my chip design to get the size down."
+    },
+    {
+      "name": "Gaming",
+      "summary": "I don't play as often as I used to, but once in a while I still love to loose myself in a great game."
+    }
+  ],
 
-  "extracurricular": {
-    "summary": "",
-    "history": [
-      {
-        "title": "BitcoinNYC",
-        "url": "https://www.meetup.com/BitcoinNYC/",
-        "summary": "BitcoinNYC is New York's Bitcoin professional network.",
-        "category": "Meetup",
-        "location": "NYC",
-        "startDate": "01.01.2016",
-        "endDate": "Present",
-        "highlights": [
-          "Great way to meet like minded people and learn from the best out there."
-        ],
-        "keywords": ["cryptocurrency", "Bitcoin"]
-      }
-    ]
-  },
+  "extracurricular": [
+    {
+      "title": "BitcoinNYC",
+      "url": "https://www.meetup.com/BitcoinNYC/",
+      "summary": "BitcoinNYC is New York's Bitcoin professional network.",
+      "category": "Meetup",
+      "location": "NYC",
+      "startDate": "01.01.2016",
+      "endDate": "Present",
+      "keywords": ["cryptocurrency", "Bitcoin"]
+    }
+  ],
 
-  "affiliation": {
-    "summary": "I'm a member of a few non-profit organizations related to internet privacy, I'm most involved with the EFF, though.",
-    "history": [
-      {
-        "category": "Non-Profit Organization",
-        "organization": "EFF",
-        "roles": ["Member"],
-        "url": "https://www.eff.org/about",
-        "startDate": "01.01.2015",
-        "endDate": "Present",
-        "summary": "The Electronic Frontier Foundation is the leading nonprofit organization",
-        "location": "815 Eddy Street, San Francisco CA 94109 USA",
-        "highlights": [
-          "EFF champions user privacy, free expression, and innovation through impact litigation, policy analysis, grassroots activism, and technology development",
-          "unique expertise of leading technologists, activists, and attorneys in our efforts to defend free speech online, fight illegal surveillance, advocate for users and innovators, and support freedom"
-        ],
-        "keywords": ["free speach", "privacy"]
-      }
-    ]
-  },
+  "affiliation": [
+    {
+      "category": "Non-Profit Organization",
+      "organization": "EFF",
+      "url": "https://www.eff.org/about",
+      "startDate": "01.01.2015",
+      "endDate": "Present",
+      "summary": "The Electronic Frontier Foundation is the leading nonprofit organization",
+      "location": "815 Eddy Street, San Francisco CA 94109 USA",
+      "keywords": ["free speach", "privacy"]
+    }
+  ],
 
-  "governance": {
-    "summary": "I'm a technology advisor to several non-profit organizations, I am most proud about the work with tor browser.",
-    "history": [
-      {
-        "summary": "Protect your privacy. Defend yourself against network surveillance and traffic analysis.",
-        "category": "Non-Profit Organization",
-        "roles": ["Advisor"],
-        "organization": "Tor browser",
-        "url": "https://www.torproject.org/",
-        "startDate": "01.01.2015",
-        "endDate": "Present",
-        "highlights": [
-          "Key advisory role regarding technology, cryptography and encryption"
-        ],
-        "keywords": ["encryption"]
-      }
-    ]
-  },
+  "governance": [
+    {
+      "summary": "Protect your privacy. Defend yourself against network surveillance and traffic analysis.",
+      "category": "Non-Profit Organization",
+      "organization": "Tor browser",
+      "url": "https://www.torproject.org/",
+      "startDate": "01.01.2015",
+      "endDate": "Present",
+      "keywords": ["encryption"]
+    }
+  ],
 
-  "service": {
-    "summary": "",
-    "history": [
-      {
-        "category": "Non-Profit Organization",
-        "organization": "ACLU",
-        "roles": ["Volunteer"],
-        "url": "https://www.aclu.org/",
-        "startDate": "01.01.2015",
-        "endDate": "Present",
-        "summary": "ACLU's mission is to defend and preserve the individual rights and liberties guaranteed to every person in this country by the Constitution and laws of the United States.",
-        "location": "125 Broad St., 18th floor, New York, NY 10004",
-        "highlights": [
-          "The ACLU engaged in several battles to ensure that government records about individuals were kept private, and to give individuals the right to review their records"
-        ],
-        "keywords": ["Privacy", "Free Speach"]
-      }
-    ]
-  },
+  "service": [
+    {
+      "category": "Non-Profit Organization",
+      "organization": "ACLU",
+      "url": "https://www.aclu.org/",
+      "startDate": "01.01.2015",
+      "endDate": "Present",
+      "summary": "ACLU's mission is to defend and preserve the individual rights and liberties guaranteed to every person in this country by the Constitution and laws of the United States.",
+      "location": "125 Broad St., 18th floor, New York, NY 10004",
+      "keywords": ["Privacy", "Free Speach"]
+    }
+  ],
 
-  "references": {
-    "summary": "",
-    "history": [
-      {
-        "name": "Angela Moss",
-        "role": "Account Executive",
-        "company": "Allsafe Cybersecurity",
-        "summary": "Elliot is a very loyal and competent employee."
-      },
-      {
-        "name": " Gideon Goddard ",
-        "role": "CEO",
-        "company": "Allsafe Cybersecurity",
-        "summary": "Elliot is a very loyal and competent employee."
-      }
-    ]
-  },
-
-  "disposition": {
-    "summary": "I'm looking for consulting work as a full time contractor for companies based in NYC or companies that allow remote work.",    
-    "travel": 20,
-    "authorization": "Visa for USA",
-    "commitment": ["Contracting", "Full-time"],
-    "remote": true,
-    "relocation": {
-      "willing": true,
-      "destinations": ["Europe", "Hong Kong"]
-    }    
-  }
+  "references": [
+    {
+      "name": "Angela Moss",
+      "role": "Account Executive",
+      "company": "Allsafe Cybersecurity",
+      "summary": "Elliot is a very loyal and competent employee."
+    },
+    {
+      "name": " Gideon Goddard ",
+      "role": "CEO",
+      "company": "Allsafe Cybersecurity",
+      "summary": "Elliot is a very loyal and competent employee."
+    }
+  ]
 }
