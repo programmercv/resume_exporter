@@ -1,0 +1,53 @@
+{% if site.data.resume.qualifications.size > 0 %}
+  <div class="row qualifications section" id="qualifications" style="page-break-inside: avoid;">
+    <div class="col-12">
+      <h2 class="section-heading">Qualifications</h2>
+
+      {% for qualification in site.data.resume.qualifications %}
+        <div class="qualification-entry entry {% if qualification == site.data.resume.qualifications.last %}last{% endif %}" style="page-break-inside: avoid;">
+          <div class="row no-gutters title">
+            <div class="col-sm-8">
+              <h3>
+                {% if qualification.url %}
+                  <a href="{{qualification.url}}">{{qualification.title}}</a>
+                {% else %}
+                  {{qualification.title}}
+                {% endif %}
+              </h3>
+            </div>
+            <div class="col-sm-4 right">
+              {% capture dates  %}{{ qualification.startDate }}{% if qualification.startDate.size > 0 and qualification.endDate.size > 0%} - {% endif %} {{qualification.endDate}}{%endcapture%}
+              {{  dates }}
+            </div>          
+          </div>
+
+          <div class="row no-gutters subtitle">
+            <div class="col-sm-6">
+              {{ qualification.category }}
+            </div>
+            <div class="col-sm-6 right">
+              {{ qualification.from }}
+            </div>
+          </div>   
+
+          {% if qualification.summary %}
+            <div class="summary">
+              {{qualification.summary}}
+            </div>
+          {% endif %}
+
+          {% if qualification.keywords %}
+            <div class="keywords">
+              {% for keyword in qualification.keywords %}
+                <span class="keyword tag">
+                {{ keyword }}
+                </span>
+               {% endfor %}
+            </div>
+          {% endif %}
+
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+{% endif %}

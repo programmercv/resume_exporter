@@ -1,0 +1,25 @@
+{% if site.data.resume.basics.contact.social.size > 0 %}
+  <div class="row social">
+    <div class="col-12">      
+      {% for social in site.data.resume.basics.contact.social %}
+        <div class="social-entry">          
+          {% if social.network %}
+            <span class="network">
+              {{social.network}}:
+            </span>
+          {% endif %}
+            
+          {% if social.user %}
+            <span class="user">
+              {% if social.url %}
+                <a href="{{social.url}}">{{social.user}}</a>
+              {% else %}
+                {{social.user}}
+              {% endif %}
+            </span>
+          {% endif %}
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+{% endif %}

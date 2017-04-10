@@ -1,0 +1,52 @@
+{% if site.data.resume.governance.size > 0 %}
+  <div class="row governance section" id="governance" style="page-break-inside: avoid;">
+    <div class="col-12">
+      <h2 class="section-heading">Governance</h2>
+
+      {% for governance_entry in site.data.resume.governance %}
+        <div class="governance_entry entry {% if governance_entry == site.data.resume.governance.last %}last{% endif %}" style="page-break-inside: avoid;">
+          <div class="row no-gutters title">
+            <div class="col-sm-6">
+              <h3>
+                {% if governance_entry.url %}
+                  <a href="{{governance_entry.url}}">{{governance_entry.organization}}</a>
+                {% else %}
+                  {{governance_entry.organization}}
+                {% endif %}
+              </h3>
+            </div>
+            <div class="col-sm-6 right">
+              {% capture dates  %}{{ governance_entry.startDate }}{% if governance_entry.startDate.size > 0 and governance_entry.endDate.size > 0 %} - {% endif %} {{governance_entry.endDate}}{%endcapture%}
+              {{  dates }}
+            </div>          
+          </div>
+
+          <div class="row no-gutters subtitle">
+            <div class="col-sm-6">
+              {{ governance_entry.category }}
+            </div>
+            <div class="col-sm-6 right">
+            </div>
+          </div>
+
+          {% if governance_entry.summary %}
+            <div class="summary">
+              {{governance_entry.summary}}
+            </div>
+          {% endif %}
+
+          {% if governance_entry.keywords %}
+            <div class="keywords">
+              {% for keyword in governance_entry.keywords %}
+                <span class="keyword tag">
+                {{ keyword }}
+                </span>
+               {% endfor %}
+            </div>
+          {% endif %}
+
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+{% endif %}

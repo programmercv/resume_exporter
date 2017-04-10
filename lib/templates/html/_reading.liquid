@@ -1,0 +1,52 @@
+{% if site.data.resume.reading.size > 0 %}
+  <div class="row reading section" id="reading" style="page-break-inside: avoid;">
+    <div class="col-12">
+      <h2 class="section-heading">Reading</h2>
+
+      {% for reading_entry in site.data.resume.reading %}
+        <div class="reading_entry entry {% if reading_entry == site.data.resume.reading.last %}last{% endif %}" style="page-break-inside: avoid;">
+          <div class="row no-gutters title">
+            <div class="col-sm-10">
+              <h3>
+                {% if reading_entry.url %}
+                  <a href="{{reading_entry.url}}">{{reading_entry.title}}</a>
+                {% else %}
+                  {{reading_entry.title}}
+                {% endif %}
+              </h3>
+            </div>
+            <div class="col-sm-2 right">
+              {{  reading_entry.date }} 
+            </div>          
+          </div>
+
+          <div class="row no-gutters subtitle">
+            <div class="col-sm-6">
+              {{ reading_entry.category }}
+            </div>
+            <div class="col-sm-6 right">
+              {{ reading_entry.author }}
+            </div>
+          </div>
+
+          {% if reading_entry.summary %}
+            <div class="summary">
+              {{reading_entry.summary}}
+            </div>
+          {% endif %}
+
+          {% if reading_entry.keywords %}
+            <div class="keywords">
+              {% for keyword in reading_entry.keywords %}
+                <span class="keyword tag">
+                {{ keyword }}
+                </span>
+               {% endfor %}
+            </div>
+          {% endif %}
+
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+{% endif %}

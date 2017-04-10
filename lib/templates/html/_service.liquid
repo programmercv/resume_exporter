@@ -1,0 +1,53 @@
+{% if site.data.resume.service.size > 0 %}
+  <div class="row service section" id="service" style="page-break-inside: avoid;">
+    <div class="col-12">
+      <h2 class="section-heading">Service</h2>
+
+      {% for service_entry in site.data.resume.service %}
+        <div class="service_entry-entry entry {% if service_entry == site.data.resume.service.last %}last{% endif %}" style="page-break-inside: avoid;">
+          <div class="row no-gutters title">
+            <div class="col-sm-8">
+              <h3>
+                {% if service_entry.url %}
+                  <a href="{{service_entry.url}}">{{service_entry.organization}}</a>
+                {% else %}
+                  {{service_entry.organization}}
+                {% endif %}
+              </h3>
+            </div>
+            <div class="col-sm-4 right">
+              {% capture dates  %}{{ service_entry.startDate }}{% if service_entry.startDate.size > 0 and service_entry.endDate.size > 0 %} - {% endif %} {{service_entry.endDate}}{%endcapture%}
+                {{  dates }}
+            </div>          
+          </div>
+
+          <div class="row no-gutters subtitle">
+            <div class="col-sm-6">
+              {{ service_entry.category }}
+            </div>
+            <div class="col-sm-6 right">
+              {{ service_entry.location }}
+            </div>
+          </div>
+
+          {% if service_entry.summary %}
+            <div class="summary">
+              {{service_entry.summary}}
+            </div>
+          {% endif %}
+
+          {% if service_entry.keywords %}
+            <div class="keywords">
+              {% for keyword in service_entry.keywords %}
+                <span class="keyword tag">
+                {{ keyword }}
+                </span>
+               {% endfor %}
+            </div>
+          {% endif %}
+
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+{% endif %}

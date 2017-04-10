@@ -1,0 +1,53 @@
+{% if site.data.resume.projects.size > 0 %}
+  <div class="row projects section" id="projects" style="page-break-inside: avoid;">
+    <div class="col-12">
+      <h2 class="section-heading">Projects</h2>
+
+      {% for project in site.data.resume.projects %}
+        <div class="project-entry entry {% if project == site.data.resume.projects.last %}last{% endif %}" style="page-break-inside: avoid;">
+          <div class="row no-gutters title">
+            <div class="col-sm-6">
+              <h3>
+                {% if project.url %}
+                  <a href="{{project.url}}">{{project.title}}</a>
+                {% else %}
+                  {{project.title}}
+                {% endif %}
+              </h3>
+            </div>
+            <div class="col-sm-6 right">
+              {% capture dates  %}{{ project.startDate }}{% if project.startDate.size > 0 and project.endDate.size > 0 %} - {% endif %} {{project.endDate}}{%endcapture%}
+              {{  dates }}
+            </div>          
+          </div>
+
+          <div class="row no-gutters subtitle">
+            <div class="col-sm-6">
+              {{project.category}} 
+            </div>
+            <div class="col-sm-6 right">
+              <a href="{{project.repo}}">{{project.repo}}</a>
+            </div>
+          </div>
+
+          {% if project.summary %}
+            <div class="summary">
+              {{project.summary}}
+            </div>
+          {% endif %}
+
+          {% if project.keywords %}
+            <div class="keywords">
+              {% for keyword in project.keywords %}
+                <span class="keyword tag">
+                {{ keyword }}
+                </span>
+               {% endfor %}
+            </div>
+          {% endif %}
+
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+{% endif %}

@@ -1,0 +1,52 @@
+{% if site.data.resume.writing.size > 0 %}
+  <div class="row writing section" id="writing" style="page-break-inside: avoid;">
+    <div class="col-12">
+      <h2 class="section-heading">Writing</h2>
+
+      {% for writing_entry in site.data.resume.writing %}
+        <div class="writing_entry entry {% if writing_entry == site.data.resume.writing.last %}last{% endif %}" style="page-break-inside: avoid;">
+          <div class="row no-gutters title">
+            <div class="col-sm-10">
+              <h3>
+                {% if writing_entry.url %}
+                  <a href="{{writing_entry.url}}">{{writing_entry.title}}</a>
+                {% else %}
+                  {{writing_entry.title}}
+                {% endif %}
+              </h3>
+            </div>
+            <div class="col-sm-2 right">
+              {{  writing_entry.date }}
+            </div>          
+          </div>
+
+          <div class="row no-gutters subtitle">
+            <div class="col-sm-6">
+              {{ writing_entry.category }}
+            </div>
+            <div class="col-sm-6 right">
+              {{ writing_entry.publisher }}
+            </div>
+          </div>
+
+          {% if writing_entry.summary %}
+            <div class="summary">
+              {{writing_entry.summary}}
+            </div>
+          {% endif %}
+
+          {% if writing_entry.keywords %}
+            <div class="keywords">
+              {% for keyword in writing_entry.keywords %}
+                <span class="keyword tag">
+                {{ keyword }}
+                </span>
+               {% endfor %}
+            </div>
+          {% endif %}
+
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+{% endif %}

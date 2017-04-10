@@ -1,0 +1,54 @@
+{% if site.data.resume.recognition.size > 0 %}
+  <div class="row recognition section" id="recognition" style="page-break-inside: avoid;">
+    <div class="col-12">
+      <h2 class="section-heading">Recognition</h2>
+
+      {% for recognition_entry in site.data.resume.recognition %}
+        <div class="recognition_entry entry {% if recognition_entry == site.data.resume.recognition.last %}last{% endif %}" style="page-break-inside: avoid;">
+
+          <div class="row no-gutters title">
+            <div class="col-sm-8">
+              <h3>
+                {% if recognition_entry.url %}
+                  <a href="{{recognition_entry.url}}">{{recognition_entry.title}}</a>
+                {% else %}
+                  {{recognition_entry.title}}
+                {% endif %}
+              </h3>
+            </div>
+            <div class="col-sm-4 right">
+              {% capture dates  %}{{ recognition_entry.startDate }}{% if recognition_entry.startDate.size > 0 and recognition_entry.endDate.size > 0 %} - {% endif %} {{recognition_entry.endDate}}{%endcapture%}
+              {{  dates }}
+            </div>          
+          </div>
+
+          <div class="row no-gutters subtitle">
+            <div class="col-sm-6">
+              {{ recognition_entry.category }}
+            </div>
+            <div class="col-sm-6 right">
+              {{ recognition_entry.from }}
+            </div>
+          </div>
+
+          {% if recognition_entry.summary %}
+            <div class="summary">
+              {{recognition_entry.summary}}
+            </div>
+          {% endif %}
+
+          {% if recognition_entry.keywords %}
+            <div class="keywords">
+              {% for keyword in recognition_entry.keywords %}
+                <span class="keyword tag">
+                {{ keyword }}
+                </span>
+               {% endfor %}
+            </div>
+          {% endif %}
+
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+{% endif %}

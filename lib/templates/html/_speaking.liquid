@@ -1,0 +1,53 @@
+{% if site.data.resume.speaking.size > 0 %}
+  <div class="row speaking section" id="speaking" style="page-break-inside: avoid;">
+    <div class="col-12">
+      <h2 class="section-heading">Speaking</h2>
+
+      {% for speaking_entry in site.data.resume.speaking %}
+        <div class="speaking_entry entry {% if speaking_entry == site.data.resume.speaking.last %}last{% endif %}" style="page-break-inside: avoid;">
+
+          <div class="row no-gutters title">
+            <div class="col-sm-10">
+              <h3>
+                {% if speaking_entry.url %}
+                  <a href="{{speaking_entry.url}}">{{speaking_entry.title}}</a>
+                {% else %}
+                  {{speaking_entry.title}}
+                {% endif %}
+              </h3>
+            </div>
+            <div class="col-sm-2 right">
+              {{  speaking_entry.date }}
+            </div>          
+          </div>
+
+          <div class="row no-gutters subtitle">
+            <div class="col-sm-6">
+              {{ speaking_entry.event }}
+            </div>
+            <div class="col-sm-6 right">
+              {{ speaking_entry.location }}
+            </div>
+          </div>
+
+          {% if speaking_entry.summary %}
+            <div class="summary">
+              {{speaking_entry.summary}}
+            </div>
+          {% endif %}
+
+          {% if speaking_entry.keywords %}
+            <div class="keywords">
+              {% for keyword in speaking_entry.keywords %}
+                <span class="keyword tag">
+                {{ keyword }}
+                </span>
+               {% endfor %}
+            </div>
+          {% endif %}
+
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+{% endif %}

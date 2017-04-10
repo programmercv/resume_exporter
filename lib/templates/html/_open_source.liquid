@@ -1,0 +1,53 @@
+{% if site.data.resume.openSource.size > 0 %}
+  <div class="row open_source section" id="open_source" style="page-break-inside: avoid;">
+    <div class="col-12">
+      <h2 class="section-heading">Open Source</h2>
+
+      {% for open_source in site.data.resume.openSource %}
+        <div class="open_source-entry entry {% if open_source == site.data.resume.openSource.last %}last{% endif %}" style="page-break-inside: avoid;">
+          <div class="row no-gutters title">
+            <div class="col-sm-6">
+              <h3>
+                {% if open_source.url %}
+                  <a href="{{open_source.url}}">{{open_source.title}}</a>
+                {% else %}
+                  {{open_source.title}}
+                {% endif %}
+              </h3>
+            </div>
+            <div class="col-sm-6 right">
+              {% capture dates  %}{{ open_source.startDate }}{% if open_source.startDate.size > 0 and open_source.endDate.size > 0 %} - {% endif %} {{open_source.endDate}}{%endcapture%}
+              {{  dates }}
+            </div>          
+          </div>
+
+          <div class="row no-gutters subtitle">
+            <div class="col-sm-6">
+              {{open_source.category}} 
+            </div>
+            <div class="col-sm-6 right">
+              <a href="{{open_source.repo}}">{{open_source.repo}}</a>
+            </div>
+          </div>
+
+          {% if open_source.summary %}
+            <div class="summary">
+              {{open_source.summary}}
+            </div>
+          {% endif %}
+
+          {% if open_source.keywords %}
+            <div class="keywords">
+              {% for keyword in open_source.keywords %}
+                <span class="keyword tag">
+                {{ keyword }}
+                </span>
+               {% endfor %}
+            </div>
+          {% endif %}
+
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+{% endif %}

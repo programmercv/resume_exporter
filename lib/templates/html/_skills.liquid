@@ -1,0 +1,35 @@
+{% if site.data.resume.skills.size > 0 %}
+  <div class="row skills section" id="skills" style="page-break-inside: avoid;">
+    <div class="col-12">
+      <h2 class="section-heading">Skills</h2>
+
+      {% for skill in site.data.resume.skills %}
+        <div class="skill-entry entry {% if skill == site.data.resume.skills.last %}last{% endif %}" style="page-break-inside: avoid;">
+
+          {% if skill.name %}
+            <div class="name">
+              {{skill.name}}
+            </div>
+          {% endif %}
+
+          {% if skill.summary %}
+            <div class="summary">
+              {{skill.summary}}
+            </div>
+          {% endif %}
+
+          {% if skill.keywords %}
+            <div class="keywords">
+              {% for keyword in skill.keywords %}
+                <span class="keyword tag">
+                {{ keyword }}
+                </span>
+               {% endfor %}
+            </div>
+          {% endif %}
+
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+{% endif %}

@@ -1,0 +1,19 @@
+{% if site.data.resume.basics.size > 0 %}
+  <div class="row basics section" id="basics">
+    <div class="col-12">
+      {% if site.data.resume.basics.name %}
+        <h1 class="name">{{ site.data.resume.basics.name }}</h1>
+      {% endif %}
+
+      {% if site.data.resume.basics.label %}
+        <h2 class="label">{{ site.data.resume.basics.label }}</h2>
+      {% endif %}
+
+      {% if site.data.resume.basics.summary %}
+        <div class="summary">
+          {{ site.data.resume.basics.summary }}
+        </div>
+      {% endif %}
+    </div>
+  </div>
+{% endif %}

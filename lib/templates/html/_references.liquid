@@ -1,0 +1,28 @@
+{% if site.data.resume.references.size > 0 %}
+  <div class="row references section" id="references" style="page-break-inside: avoid;">
+    <div class="col-12">
+      <h2 class="section-heading">References</h2>
+
+      {% for reference in site.data.resume.references %}
+        <div class="reference-entry entry {% if reference == site.data.resume.references.last %}last{% endif %}" style="page-break-inside: avoid;">
+          {% if reference.name %}
+            <h3 class="name">{{reference.name}}</h3>
+          {% endif %}
+          
+          {% if reference.role or reference.company %}
+            <div class="subtitle">
+              {% capture subtitle %}<span class="role">{{ reference.role }}</span>{% if reference.role and reference.company %}, {% endif %}<span class="company">{{ reference.company }}</span>{% endcapture %}
+                {{ subtitle }}
+            </div>
+          {% endif %}
+
+          {% if reference.summary %}
+            <div class="summary">
+              <blockquote>{{reference.summary}}</blockquote>
+            </div>
+          {% endif %}
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+{% endif %}

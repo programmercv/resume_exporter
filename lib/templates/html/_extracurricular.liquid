@@ -1,0 +1,53 @@
+{% if site.data.resume.extracurricular.size > 0 %}
+  <div class="row extracurricular section" id="extracurricular" style="page-break-inside: avoid;">
+    <div class="col-12">
+      <h2 class="section-heading">Extracurricular</h2>
+
+      {% for extracurricular in site.data.resume.extracurricular %}
+        <div class="extracurricular entry {% if extracurricular == site.data.resume.extracurricular.last %}last{% endif %}" style="page-break-inside: avoid;">
+          <div class="row no-gutters title">
+            <div class="col-sm-6">
+              <h3>
+                {% if extracurricular.url %}
+                  <a href="{{extracurricular.url}}">{{extracurricular.title}}</a>
+                {% else %}
+                  {{extracurricular.title}}
+                {% endif %}
+              </h3>
+            </div>
+            <div class="col-sm-6 right">
+              {% capture dates  %}{{ extracurricular.startDate }}{% if extracurricular.startDate.size > 0 and extracurricular.endDate.size > 0 %} - {% endif %} {{extracurricular.endDate}}{%endcapture%}
+              {{  dates }}
+            </div>          
+          </div>
+
+          <div class="row no-gutters subtitle">
+            <div class="col-sm-6">
+              {{ extracurricular.category }}
+            </div>
+            <div class="col-sm-6 right">
+              {{ extracurricular.from }}
+            </div>
+          </div>
+
+          {% if extracurricular.summary %}
+            <div class="summary">
+              {{extracurricular.summary}}
+            </div>
+          {% endif %}
+
+          {% if extracurricular.keywords %}
+            <div class="keywords">
+              {% for keyword in extracurricular.keywords %}
+                <span class="keyword tag">
+                {{ keyword }}
+                </span>
+               {% endfor %}
+            </div>
+          {% endif %}
+
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+{% endif %}

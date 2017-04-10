@@ -2,6 +2,8 @@ require "extractors/factory"
 require "exporters/json"
 require "exporters/xml"
 require "exporters/md"
+require "exporters/html"
+require "exporters/pdf"
 require "exporters/txt"
 require "exporters/yaml"
 
@@ -27,6 +29,10 @@ class ResumeExporter
       Exporter::Json.export(data: @data, template: "json_resume")
     when "xml"
       Exporter::Xml.export(data: @data)
+    when "html"
+      Exporter::Html.export(data: @data)
+    when "pdf"
+      Exporter::Pdf.export(data: @data)
     when "md"
       Exporter::Md.export(data: @data)
     when "yaml"

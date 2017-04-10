@@ -1,0 +1,27 @@
+{% if site.data.resume.basics.contact.size > 0 %}
+  <div class="row contact">
+    <div class="col-12">
+      <h2 class="section-heading">Contact</h2>
+      {% if site.data.resume.basics.contact.email %}
+        <div class="email">
+          {{ site.data.resume.basics.contact.email }}
+        </div>
+      {% endif %}
+      {% if site.data.resume.basics.contact.phone %}
+        <div class="phone">
+          {{ site.data.resume.basics.contact.phone }}
+        </div>
+      {% endif %}
+      {% if site.data.resume.basics.contact.website %}
+        <div class="website">
+          <a href="{{ site.data.resume.basics.contact.website }}">{{ site.data.resume.basics.contact.website }}</a>
+        </div>
+      {% endif %}
+      {% if site.data.resume.basics.contact.location %}
+        <div class="location">
+          {{ site.data.resume.basics.contact.location }}
+        </div>
+      {% endif %}
+    </div>
+  </div>
+{% endif %}

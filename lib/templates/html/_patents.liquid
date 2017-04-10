@@ -1,0 +1,50 @@
+{% if site.data.resume.patents.size > 0 %}
+  <div class="row patents section" id="patents" style="page-break-inside: avoid;">
+    <div class="col-12">
+      <h2 class="section-heading">Patents</h2>
+
+      {% for patent in site.data.resume.patents %}
+        <div class="patent entry {% if patent == site.data.resume.patents.last %}last{% endif %}" style="page-break-inside: avoid;">
+          <div class="row no-gutters title">
+            <div class="col-12">
+              <h3>
+                {% capture title %}<span class="patent-title">{{ patent.title }}</span>{% if patent.number %} <span class="number">({{ patent.number }})</span> {% endif %}{% endcapture %}
+                {% if patent.url %}
+                  <a href="{{patent.url}}">{{title}}</a>
+                {% else %}
+                  {{title}}
+                {% endif %}
+              </h3>
+            </div>       
+          </div>
+
+          <div class="row no-gutters subtitle">
+            <div class="col-sm-6">
+              {{ patent.status }}
+            </div>
+            <div class="col-sm-6 right">
+              {{  patent.date }}
+            </div>
+          </div>
+
+          {% if patent.summary %}
+            <div class="summary">
+              {{patent.summary}}
+            </div>
+          {% endif %}
+
+          {% if patent.keywords %}
+            <div class="keywords">
+              {% for keyword in patent.keywords %}
+                <span class="keyword tag">
+                {{ keyword }}
+                </span>
+               {% endfor %}
+            </div>
+          {% endif %}
+
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+{% endif %}

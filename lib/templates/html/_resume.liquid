@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Resume of {{ site.data.resume.basics.name }}</title>  
+  {% include "css" %}
+</head>
+<body>
+  <div class="container resume">
+    <div class="row">
+      <div class="col-md-8 main">
+        {% include "basics" %}
+        <div class="sm-only section">        
+          {% include "contact" %}
+          {% include "social" %}
+        </div>
+        {% include "disposition" %}
+        {% include "employment" %}
+        {% include "education" %}
+        {% include "references" %}
+        {% include "projects" %}
+        {% include "open_source" %}
+        {% include "qualifications" %}
+        {% include "skills" %}
+        {% include "recognition" %}
+        {% include "writing" %}
+        {% include "reading" %}
+        {% include "speaking" %}
+        {% include "patents" %}
+        {% include "languages" %}
+        {% include "extracurricular" %}
+        {% include "affiliation" %}
+        {% include "governance" %}
+        {% include "service" %}
+        {% include "interests" %}
+      </div>
+      <div class="col-md-3 col-md-offset-1 sidebar noprint">
+        <div class="md-only">        
+          {% include "image" %}
+          {% include "contact" %}
+          {% include "social" %}
+        </div>
+      </div>
+    </div>
+    <div class="row footer noprint" style="display: none;">
+      {% include "footer" %}
+    </div>
+  </div>
+</body>
+</html>

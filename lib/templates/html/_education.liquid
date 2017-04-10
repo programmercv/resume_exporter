@@ -1,0 +1,56 @@
+{% if site.data.resume.education.size > 0 %}
+  <div class="row education section" id="education">
+    <div class="col-12">
+      <h2 class="section-heading">Education</h2>
+
+      {% for school in site.data.resume.education %}
+        <div class="education-entry entry {% if school == site.data.resume.education.last %}last{% endif %}">
+
+          <div class="row no-gutters title">
+            <div class="col-sm-6">
+              <h3>
+                {% if school.url %}
+                  <a href="{{school.url}}">{{school.institution}}</a>
+                {% else %}
+                  {{school.institution}}
+                {% endif %}
+              </h3>
+            </div>
+            <div class="col-sm-6 right">
+              {% capture dates  %}{{ school.startDate }}{% if school.startDate.size > 0 and school.endDate.size > 0 %} - {% endif %} {{school.endDate}}{%endcapture%}
+              {{  dates }}   
+            </div>          
+          </div>
+
+          <div class="row no-gutters subtitle">
+            <div class="col-sm-6">
+              {% capture title %}<span class="field_of_study">{{ school.fieldOfStudy }}</span>{% if school.fieldOfStudy and school.degree %}, {% endif %}<span class="degree">{{ school.degree }}</span>{% if school.grade %} <span class="grade">({{ school.grade }})</span> {% endif %}{% endcapture %}
+              {{ title }}
+            </div>
+            <div class="col-sm-6 right">
+              {{school.location}}
+            </div>
+          </div>
+          
+          {% if school.summary %}
+            <div class="summary">
+              {{school.summary}}
+            </div>
+          {% endif %}
+
+          {% if school.keywords %}
+            <div class="keywords">
+              {% for keyword in school.keywords %}
+                <span class="keyword tag">
+                {{ keyword }}
+                </span>
+               {% endfor %}
+            </div>
+          {% endif %}
+
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+{% endif %}
+

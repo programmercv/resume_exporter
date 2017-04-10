@@ -1,0 +1,53 @@
+{% if site.data.resume.affiliation.size > 0 %}
+  <div class="row affiliation section" id="affiliation">
+    <div class="col-12">
+      <h2 class="section-heading">Affiliation</h2>
+
+      {% for affiliation in site.data.resume.affiliation %}
+        <div class="affiliation-entry entry {% if affiliation == site.data.resume.affiliation.last %}last{% endif %}">
+          <div class="row title">
+            <div class="organization col-sm-8">
+              <h3>
+                {% if affiliation.url %}
+                  <a href="{{affiliation.url}}">{{affiliation.organization}}</a>
+                {% else %}
+                  {{affiliation.organization}}
+                {% endif %}
+              </h3>
+            </div>
+            <div class="col-sm-4 right">
+              {% capture dates  %}{{ affiliation.startDate }}{% if affiliation.startDate.size > 0 and affiliation.endDate.size > 0 %} - {% endif %} {{affiliation.endDate}}{%endcapture%}
+              {{  dates }}
+            </div>          
+          </div>
+
+          <div class="row subtitle">
+            <div class="col-sm-6">
+              {{ affiliation.category }}
+            </div>
+            <div class="col-sm-6 right">
+              {{ affiliation.location }}
+            </div>
+          </div>
+
+          {% if affiliation.summary %}
+              <div class="summary row">
+                {{affiliation.summary}}
+              </div>
+          {% endif %}
+
+          {% if affiliation.keywords %}
+            <div class="keywords row">
+              {% for keyword in affiliation.keywords %}
+                <span class="keyword tag col-12">
+                {{ keyword }}
+                </span>
+               {% endfor %}
+            </div>
+          {% endif %}
+
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+{% endif %}

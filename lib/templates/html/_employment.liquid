@@ -1,0 +1,67 @@
+{% if site.data.resume.employment.size > 0 %}
+  <div class="row employment section" id="employment" style="page-break-inside: avoid;">
+    <div class="col-12">
+      <h2 class="section-heading">Work Experience</h2>
+
+      {% for job in site.data.resume.employment %}
+        <div class="employment-entry entry {% if job == site.data.resume.employment.last %}last{% endif %}" style="page-break-inside: avoid;">
+
+        <div class="row no-gutters title">          
+          <div class="employer col-sm-6">
+            <h3>
+              {% if job.url %}
+                <a href="{{job.url}}">{{job.employer}}</a>
+              {% else %}
+                {{job.employer}}
+              {% endif %}
+            </h3>
+          </div>
+
+          <div class="col-sm-6 right">        
+            <span class="date">
+              {% capture dates  %}{{ job.startDate }}{% if job.startDate.size > 0 and job.endDate.size > 0 %} - {% endif %} {{job.endDate}}{%endcapture%}
+              {{  dates }}            
+            </span>
+          </div>
+        </div>
+        <div class="row no-gutters subtitle">
+          <div class="position col-sm-6">
+            {% if job.position %}
+              {{job.position}}
+            {% endif %}
+          </div>
+
+          <div class="location col-sm-6 right">
+            {% if job.location %}
+              {{job.location}}
+            {% endif %}
+          </div>
+        </div>
+
+          {% if job.summary %}
+            <div class="summary row">
+              <div class="col-12">
+                {{job.summary}}
+              </div>
+            </div>
+          {% endif %}
+
+
+          {% if job.keywords %}
+            <div class="keywords row">
+              <div class="col-12">
+                
+                {% for keyword in job.keywords %}
+                  <span class="keyword tag">
+                  {{ keyword }}
+                  </span>
+                 {% endfor %}
+              </div>
+            </div>
+          {% endif %}
+
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+{% endif %}
