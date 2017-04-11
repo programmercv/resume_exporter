@@ -5,6 +5,8 @@ require "extractors/json/json_resume"
 require "extractors/json/fresh"
 require "extractors/json/prtflio"
 
+SafeYAML::OPTIONS[:default_mode]
+
 module Extractor
   class Json < Base
     def initialize(file_path)
