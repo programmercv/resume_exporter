@@ -4,7 +4,7 @@ require 'rubygems'
 require 'commander/import'
 require 'resume_exporter'
 
-program :version, '1.1.0'
+program :version, '1.1.1'
 program :description, 'ResumeExporter is a tool to export data from public profile html files.
 Save your profile (e.g. from LinkedIn, Xing, or Stackoverflow) as html and export to json or xml with the help of ResumeExporter.
 
