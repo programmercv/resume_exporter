@@ -1,6 +1,5 @@
 require 'tilt'
 require 'liquid'
-require "safe_yaml"
 require "base64"
 require "open-uri"
 
